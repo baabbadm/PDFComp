@@ -1,0 +1,149 @@
+
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="UTF-8" />
+  <title>PDF Compressor</title>
+  <style>
+    body {
+      font-family: Tahoma, sans-serif;
+      background: #f4f4f4;
+      padding: 40px;
+      text-align: center;
+    }
+
+    h1 {
+      color: #333;
+    }
+
+    form {
+      background: #fff;
+      padding: 30px;
+      border-radius: 12px;
+      display: inline-block;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+
+    input[type="file"], select {
+      padding: 10px;
+      margin-bottom: 20px;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+    }
+
+    button {
+      padding: 10px 20px;
+      background: #007bff;
+      color: #fff;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+      font-size: 16px;
+    }
+
+    #lang-switch {
+      position: absolute;
+      top: 15px;
+      left: 20px;
+      background: #eee;
+      padding: 5px 10px;
+      border-radius: 6px;
+      cursor: pointer;
+      font-size: 14px;
+    }
+
+    .spinner {
+      margin: 20px auto 10px;
+      border: 4px solid #f3f3f3;
+      border-top: 4px solid #007bff;
+      border-radius: 50%;
+      width: 30px;
+      height: 30px;
+      animation: spin 1s linear infinite;
+      display: inline-block;
+    }
+
+    @keyframes spin {
+      0% { transform: rotate(0deg); }
+      100% { transform: rotate(360deg); }
+    }
+
+    .loading-text {
+      margin-top: 10px;
+      color: #007bff;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+
+  <div id="lang-switch">🇸🇦 العربية</div>
+
+  <h1 id="title">🗜️ PDF Compressor</h1>
+  <form id="uploadForm" method="post" enctype="multipart/form-data" action="/api/compress/pdf-direct" target="_blank">
+    <input type="file" id="pdfFile" name="file" accept="application/pdf" required /><br>
+
+    <label for="quality" id="qualityLabel">Select Quality:</label><br>
+    <select id="quality" name="quality" required>
+      <option value="/screen">📉 Low (Smallest size)</option>
+      <option value="/ebook" selected>📘 Medium (Balanced)</option>
+      <option value="/printer">🖨️ High (Best quality)</option>
+    </select><br>
+
+    <button type="submit" id="submitBtn">Compress Now</button>
+    <div id="loading" style="display:none;">
+      <div class="spinner"></div>
+      <div class="loading-text" id="loadingText">Compressing...</div>
+    </div>
+  </form>
+
+  <script>
+    const langSwitch = document.getElementById("lang-switch");
+    const title = document.getElementById("title");
+    const qualityLabel = document.getElementById("qualityLabel");
+    const submitBtn = document.getElementById("submitBtn");
+    const loading = document.getElementById("loading");
+    const loadingText = document.getElementById("loadingText");
+
+    let currentLang = navigator.language.startsWith('ar') ? 'ar' : 'en';
+
+    const translations = {
+      ar: {
+        title: "🗜️ ضغط ملف PDF",
+        qualityLabel: "اختر الجودة:",
+        button: "ضغط الآن",
+        loading: "جارٍ الضغط...",
+        switch: "English 🇬🇧"
+      },
+      en: {
+        title: "🗜️ PDF Compressor",
+        qualityLabel: "Select Quality:",
+        button: "Compress Now",
+        loading: "Compressing...",
+        switch: "🇸🇦 العربية"
+      }
+    };
+
+    function applyLanguage(lang) {
+      document.documentElement.lang = lang;
+      document.documentElement.dir = lang === 'ar' ? 'rtl' : 'ltr';
+      title.innerText = translations[lang].title;
+      qualityLabel.innerText = translations[lang].qualityLabel;
+      submitBtn.innerText = translations[lang].button;
+      loadingText.innerText = translations[lang].loading;
+      langSwitch.innerText = translations[lang].switch;
+    }
+
+    langSwitch.addEventListener('click', () => {
+      currentLang = currentLang === 'ar' ? 'en' : 'ar';
+      applyLanguage(currentLang);
+    });
+
+    applyLanguage(currentLang);
+
+    submitBtn.addEventListener("click", () => {
+      loading.style.display = "block";
+    });
+  </script>
+</body>
+</html>

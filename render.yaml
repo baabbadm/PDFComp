@@ -1,0 +1,10 @@
+services:
+  - type: web
+    name: pdf-compressor
+    runtime: dotnet
+    buildCommand: dotnet publish -c Release -o out
+    startCommand: dotnet out/FileCompressor.dll
+    plan: free
+    envVars:
+      - key: ASPNETCORE_ENVIRONMENT
+        value: Production
