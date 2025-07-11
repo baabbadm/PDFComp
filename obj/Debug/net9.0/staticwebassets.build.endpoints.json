@@ -1,0 +1,2272 @@
+{
+  "Version": 1,
+  "ManifestType": "Build",
+  "Endpoints": [
+    {
+      "Route": "compressed/Copy of Elevate Your ITSM Journey with FSSolutions (2) (1)_compressed.foqhi7pnhl.pdf",
+      "AssetFile": "compressed/Copy of Elevate Your ITSM Journey with FSSolutions (2) (1)_compressed.pdf",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "884549"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/pdf"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"sUAGkiLWLGm3Wn2lBpAYq7j81WH2UaqV2KPk++SF1BI=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 10 Jul 2025 17:51:04 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "foqhi7pnhl"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-sUAGkiLWLGm3Wn2lBpAYq7j81WH2UaqV2KPk++SF1BI="
+        },
+        {
+          "Name": "label",
+          "Value": "compressed/Copy of Elevate Your ITSM Journey with FSSolutions (2) (1)_compressed.pdf"
+        }
+      ]
+    },
+    {
+      "Route": "compressed/Copy of Elevate Your ITSM Journey with FSSolutions (2) (1)_compressed.pdf",
+      "AssetFile": "compressed/Copy of Elevate Your ITSM Journey with FSSolutions (2) (1)_compressed.pdf",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "884549"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/pdf"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"sUAGkiLWLGm3Wn2lBpAYq7j81WH2UaqV2KPk++SF1BI=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 10 Jul 2025 17:51:04 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-sUAGkiLWLGm3Wn2lBpAYq7j81WH2UaqV2KPk++SF1BI="
+        }
+      ]
+    },
+    {
+      "Route": "compressed/Fatca-tnc_compressed.1kk3kvmwox.pdf",
+      "AssetFile": "compressed/Fatca-tnc_compressed.pdf",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "81483"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/pdf"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"L6XzmrKfo57O8UpE9ilpgdQlVcZjlbAVFdzg/z7BZyA=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 10 Jul 2025 17:27:12 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "1kk3kvmwox"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-L6XzmrKfo57O8UpE9ilpgdQlVcZjlbAVFdzg/z7BZyA="
+        },
+        {
+          "Name": "label",
+          "Value": "compressed/Fatca-tnc_compressed.pdf"
+        }
+      ]
+    },
+    {
+      "Route": "compressed/Fatca-tnc_compressed.pdf",
+      "AssetFile": "compressed/Fatca-tnc_compressed.pdf",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "81483"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/pdf"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"L6XzmrKfo57O8UpE9ilpgdQlVcZjlbAVFdzg/z7BZyA=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 10 Jul 2025 17:27:12 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-L6XzmrKfo57O8UpE9ilpgdQlVcZjlbAVFdzg/z7BZyA="
+        }
+      ]
+    },
+    {
+      "Route": "compressed/Individual-Current-Account-Opening-AR_compressed.pdf",
+      "AssetFile": "compressed/Individual-Current-Account-Opening-AR_compressed.pdf",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "209362"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/pdf"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"UulwVf8RwF9+vSKDx6fU3lZQgj6FzhTQfctOQe3G4a4=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 10 Jul 2025 17:44:49 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-UulwVf8RwF9+vSKDx6fU3lZQgj6FzhTQfctOQe3G4a4="
+        }
+      ]
+    },
+    {
+      "Route": "compressed/Individual-Current-Account-Opening-AR_compressed.ud68rzfj67.pdf",
+      "AssetFile": "compressed/Individual-Current-Account-Opening-AR_compressed.pdf",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "209362"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/pdf"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"UulwVf8RwF9+vSKDx6fU3lZQgj6FzhTQfctOQe3G4a4=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 10 Jul 2025 17:44:49 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "ud68rzfj67"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-UulwVf8RwF9+vSKDx6fU3lZQgj6FzhTQfctOQe3G4a4="
+        },
+        {
+          "Name": "label",
+          "Value": "compressed/Individual-Current-Account-Opening-AR_compressed.pdf"
+        }
+      ]
+    },
+    {
+      "Route": "compressed/MOJ_Operation and Implementation of Enterprise Risk Management_compressed.caxvi3toy2.pdf",
+      "AssetFile": "compressed/MOJ_Operation and Implementation of Enterprise Risk Management_compressed.pdf",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "4908639"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/pdf"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"RMhIDnTWzXEDLp2KxUKLgYLBaGDI1uTF3rQoEuduSdI=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 10 Jul 2025 17:57:59 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "caxvi3toy2"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-RMhIDnTWzXEDLp2KxUKLgYLBaGDI1uTF3rQoEuduSdI="
+        },
+        {
+          "Name": "label",
+          "Value": "compressed/MOJ_Operation and Implementation of Enterprise Risk Management_compressed.pdf"
+        }
+      ]
+    },
+    {
+      "Route": "compressed/MOJ_Operation and Implementation of Enterprise Risk Management_compressed.pdf",
+      "AssetFile": "compressed/MOJ_Operation and Implementation of Enterprise Risk Management_compressed.pdf",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "4908639"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/pdf"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"RMhIDnTWzXEDLp2KxUKLgYLBaGDI1uTF3rQoEuduSdI=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 10 Jul 2025 17:57:59 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-RMhIDnTWzXEDLp2KxUKLgYLBaGDI1uTF3rQoEuduSdI="
+        }
+      ]
+    },
+    {
+      "Route": "compressed/Virtual Ciso 360 by Flex_compressed.mcvja87ir3.pdf",
+      "AssetFile": "compressed/Virtual Ciso 360 by Flex_compressed.pdf",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "3297031"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/pdf"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"ioBrxu5jusaamGvSSDUA1dgY9CvW1nt1IrkDv+XYtMo=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 10 Jul 2025 17:50:27 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "mcvja87ir3"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-ioBrxu5jusaamGvSSDUA1dgY9CvW1nt1IrkDv+XYtMo="
+        },
+        {
+          "Name": "label",
+          "Value": "compressed/Virtual Ciso 360 by Flex_compressed.pdf"
+        }
+      ]
+    },
+    {
+      "Route": "compressed/Virtual Ciso 360 by Flex_compressed.pdf",
+      "AssetFile": "compressed/Virtual Ciso 360 by Flex_compressed.pdf",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "3297031"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/pdf"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"ioBrxu5jusaamGvSSDUA1dgY9CvW1nt1IrkDv+XYtMo=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 10 Jul 2025 17:50:27 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-ioBrxu5jusaamGvSSDUA1dgY9CvW1nt1IrkDv+XYtMo="
+        }
+      ]
+    },
+    {
+      "Route": "compressed/WeqaBCM  Proposal_compressed.4zdq2py0s3.pdf",
+      "AssetFile": "compressed/WeqaBCM  Proposal_compressed.pdf",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "2408312"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/pdf"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"wNBnCPNSwFv/F/4hmWXL3EGrYFeQMGfgAUOueTTN2VA=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 10 Jul 2025 17:39:57 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "4zdq2py0s3"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-wNBnCPNSwFv/F/4hmWXL3EGrYFeQMGfgAUOueTTN2VA="
+        },
+        {
+          "Name": "label",
+          "Value": "compressed/WeqaBCM  Proposal_compressed.pdf"
+        }
+      ]
+    },
+    {
+      "Route": "compressed/WeqaBCM  Proposal_compressed.pdf",
+      "AssetFile": "compressed/WeqaBCM  Proposal_compressed.pdf",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "2408312"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/pdf"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"wNBnCPNSwFv/F/4hmWXL3EGrYFeQMGfgAUOueTTN2VA=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 10 Jul 2025 17:39:57 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-wNBnCPNSwFv/F/4hmWXL3EGrYFeQMGfgAUOueTTN2VA="
+        }
+      ]
+    },
+    {
+      "Route": "compressed/amer_compressed.feikcvhr8w.pdf",
+      "AssetFile": "compressed/amer_compressed.pdf",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "222281"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/pdf"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"2S3L974Pvcqd36LAF6Ncr0eD0r8W9OdzVOrf582hY6c=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 10 Jul 2025 17:49:00 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "feikcvhr8w"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-2S3L974Pvcqd36LAF6Ncr0eD0r8W9OdzVOrf582hY6c="
+        },
+        {
+          "Name": "label",
+          "Value": "compressed/amer_compressed.pdf"
+        }
+      ]
+    },
+    {
+      "Route": "compressed/amer_compressed.pdf",
+      "AssetFile": "compressed/amer_compressed.pdf",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "222281"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/pdf"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"2S3L974Pvcqd36LAF6Ncr0eD0r8W9OdzVOrf582hY6c=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 10 Jul 2025 17:49:00 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-2S3L974Pvcqd36LAF6Ncr0eD0r8W9OdzVOrf582hY6c="
+        }
+      ]
+    },
+    {
+      "Route": "compressed/iso0000_compressed.pdf",
+      "AssetFile": "compressed/iso0000_compressed.pdf",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "16635937"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/pdf"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"h0nr/jvOVZyGlmzidoFQtDSCNl7MDEfV3Gepz3i3Xzk=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 10 Jul 2025 17:50:53 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-h0nr/jvOVZyGlmzidoFQtDSCNl7MDEfV3Gepz3i3Xzk="
+        }
+      ]
+    },
+    {
+      "Route": "compressed/iso0000_compressed.tz70qdivfe.pdf",
+      "AssetFile": "compressed/iso0000_compressed.pdf",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "16635937"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/pdf"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"h0nr/jvOVZyGlmzidoFQtDSCNl7MDEfV3Gepz3i3Xzk=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 10 Jul 2025 17:50:53 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "tz70qdivfe"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-h0nr/jvOVZyGlmzidoFQtDSCNl7MDEfV3Gepz3i3Xzk="
+        },
+        {
+          "Name": "label",
+          "Value": "compressed/iso0000_compressed.pdf"
+        }
+      ]
+    },
+    {
+      "Route": "compressed/jirisy_compressed_compressed.czltlss6wg.pdf",
+      "AssetFile": "compressed/jirisy_compressed_compressed.pdf",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "9557277"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/pdf"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"eIZ7HBI/46rbe8OP7FBL8dTgzYhqr57Z02cJ5tUYus4=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 10 Jul 2025 17:49:27 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "czltlss6wg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-eIZ7HBI/46rbe8OP7FBL8dTgzYhqr57Z02cJ5tUYus4="
+        },
+        {
+          "Name": "label",
+          "Value": "compressed/jirisy_compressed_compressed.pdf"
+        }
+      ]
+    },
+    {
+      "Route": "compressed/jirisy_compressed_compressed.pdf",
+      "AssetFile": "compressed/jirisy_compressed_compressed.pdf",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "9557277"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/pdf"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"eIZ7HBI/46rbe8OP7FBL8dTgzYhqr57Z02cJ5tUYus4=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 10 Jul 2025 17:49:27 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-eIZ7HBI/46rbe8OP7FBL8dTgzYhqr57Z02cJ5tUYus4="
+        }
+      ]
+    },
+    {
+      "Route": "compressed/كراسة شهادة الايزو (1)_compressed.7403itr73x.pdf",
+      "AssetFile": "compressed/كراسة شهادة الايزو (1)_compressed.pdf",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "3038009"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/pdf"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"V3nVWtwmL2JchGVfqj4AT7xtR486/i/62dHbaj3UYHg=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 10 Jul 2025 17:59:05 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "7403itr73x"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-V3nVWtwmL2JchGVfqj4AT7xtR486/i/62dHbaj3UYHg="
+        },
+        {
+          "Name": "label",
+          "Value": "compressed/كراسة شهادة الايزو (1)_compressed.pdf"
+        }
+      ]
+    },
+    {
+      "Route": "compressed/كراسة شهادة الايزو (1)_compressed.pdf",
+      "AssetFile": "compressed/كراسة شهادة الايزو (1)_compressed.pdf",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "3038009"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/pdf"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"V3nVWtwmL2JchGVfqj4AT7xtR486/i/62dHbaj3UYHg=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 10 Jul 2025 17:59:05 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-V3nVWtwmL2JchGVfqj4AT7xtR486/i/62dHbaj3UYHg="
+        }
+      ]
+    },
+    {
+      "Route": "compressed/كيفية تنفيذ الاعمال والخدمات اجراءات ادارة البيانات (1)_compressed.fsckt6cu59.pdf",
+      "AssetFile": "compressed/كيفية تنفيذ الاعمال والخدمات اجراءات ادارة البيانات (1)_compressed.pdf",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1693692"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/pdf"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"v9KOpIzTr+pp8zIAsrX49ATMzc/+Q3jBUG33IR8VJZ4=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 10 Jul 2025 17:58:43 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "fsckt6cu59"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-v9KOpIzTr+pp8zIAsrX49ATMzc/+Q3jBUG33IR8VJZ4="
+        },
+        {
+          "Name": "label",
+          "Value": "compressed/كيفية تنفيذ الاعمال والخدمات اجراءات ادارة البيانات (1)_compressed.pdf"
+        }
+      ]
+    },
+    {
+      "Route": "compressed/كيفية تنفيذ الاعمال والخدمات اجراءات ادارة البيانات (1)_compressed.pdf",
+      "AssetFile": "compressed/كيفية تنفيذ الاعمال والخدمات اجراءات ادارة البيانات (1)_compressed.pdf",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1693692"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/pdf"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"v9KOpIzTr+pp8zIAsrX49ATMzc/+Q3jBUG33IR8VJZ4=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 10 Jul 2025 17:58:43 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-v9KOpIzTr+pp8zIAsrX49ATMzc/+Q3jBUG33IR8VJZ4="
+        }
+      ]
+    },
+    {
+      "Route": "compressed/كيفية تنفيذ الاعمال والخدمات اجراءات ادارة البيانات_compressed.a7wrc6pp0x.pdf",
+      "AssetFile": "compressed/كيفية تنفيذ الاعمال والخدمات اجراءات ادارة البيانات_compressed.pdf",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "5229214"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/pdf"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"OvBH0sHM353/M4KMQz3Hd/iMAHumwTkiveZNPjZbBjc=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 10 Jul 2025 17:55:26 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "a7wrc6pp0x"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-OvBH0sHM353/M4KMQz3Hd/iMAHumwTkiveZNPjZbBjc="
+        },
+        {
+          "Name": "label",
+          "Value": "compressed/كيفية تنفيذ الاعمال والخدمات اجراءات ادارة البيانات_compressed.pdf"
+        }
+      ]
+    },
+    {
+      "Route": "compressed/كيفية تنفيذ الاعمال والخدمات اجراءات ادارة البيانات_compressed.pdf",
+      "AssetFile": "compressed/كيفية تنفيذ الاعمال والخدمات اجراءات ادارة البيانات_compressed.pdf",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "5229214"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/pdf"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"OvBH0sHM353/M4KMQz3Hd/iMAHumwTkiveZNPjZbBjc=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 10 Jul 2025 17:55:26 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-OvBH0sHM353/M4KMQz3Hd/iMAHumwTkiveZNPjZbBjc="
+        }
+      ]
+    },
+    {
+      "Route": "index.91y3n5gr1i.html",
+      "AssetFile": "index.html.gz",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip",
+          "Quality": "0.000505050505"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1979"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/html"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"O8eZ/OyfJ4IC4QdMXlzg2PTRlfBssH1LFfWoMLj349w=\""
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"DTqwnDO8SwRKLIx2KJ6gPLwhv/slVD65UAHdgkEAw/s=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 10 Jul 2025 17:52:54 GMT"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "91y3n5gr1i"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-DTqwnDO8SwRKLIx2KJ6gPLwhv/slVD65UAHdgkEAw/s="
+        },
+        {
+          "Name": "label",
+          "Value": "index.html"
+        }
+      ]
+    },
+    {
+      "Route": "index.91y3n5gr1i.html",
+      "AssetFile": "index.html",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "5950"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/html"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"DTqwnDO8SwRKLIx2KJ6gPLwhv/slVD65UAHdgkEAw/s=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 10 Jul 2025 17:52:54 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "91y3n5gr1i"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-DTqwnDO8SwRKLIx2KJ6gPLwhv/slVD65UAHdgkEAw/s="
+        },
+        {
+          "Name": "label",
+          "Value": "index.html"
+        }
+      ]
+    },
+    {
+      "Route": "index.91y3n5gr1i.html.gz",
+      "AssetFile": "index.html.gz",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1979"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/html"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"O8eZ/OyfJ4IC4QdMXlzg2PTRlfBssH1LFfWoMLj349w=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 10 Jul 2025 17:52:54 GMT"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "91y3n5gr1i"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-O8eZ/OyfJ4IC4QdMXlzg2PTRlfBssH1LFfWoMLj349w="
+        },
+        {
+          "Name": "label",
+          "Value": "index.html.gz"
+        }
+      ]
+    },
+    {
+      "Route": "index.html",
+      "AssetFile": "index.html.gz",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip",
+          "Quality": "0.000505050505"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1979"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/html"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"O8eZ/OyfJ4IC4QdMXlzg2PTRlfBssH1LFfWoMLj349w=\""
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"DTqwnDO8SwRKLIx2KJ6gPLwhv/slVD65UAHdgkEAw/s=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 10 Jul 2025 17:52:54 GMT"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-DTqwnDO8SwRKLIx2KJ6gPLwhv/slVD65UAHdgkEAw/s="
+        }
+      ]
+    },
+    {
+      "Route": "index.html",
+      "AssetFile": "index.html",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "5950"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/html"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"DTqwnDO8SwRKLIx2KJ6gPLwhv/slVD65UAHdgkEAw/s=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 10 Jul 2025 17:52:54 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-DTqwnDO8SwRKLIx2KJ6gPLwhv/slVD65UAHdgkEAw/s="
+        }
+      ]
+    },
+    {
+      "Route": "index.html.gz",
+      "AssetFile": "index.html.gz",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1979"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/html"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"O8eZ/OyfJ4IC4QdMXlzg2PTRlfBssH1LFfWoMLj349w=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 10 Jul 2025 17:52:54 GMT"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-O8eZ/OyfJ4IC4QdMXlzg2PTRlfBssH1LFfWoMLj349w="
+        }
+      ]
+    },
+    {
+      "Route": "uploads/Copy of Elevate Your ITSM Journey with FSSolutions (2) (1).pdf",
+      "AssetFile": "uploads/Copy of Elevate Your ITSM Journey with FSSolutions (2) (1).pdf",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "8283909"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/pdf"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"kQ8e+S3rXHLOnngCNBb0KBEnkwLelcf1ZuHwukZApbY=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 10 Jul 2025 17:51:01 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-kQ8e+S3rXHLOnngCNBb0KBEnkwLelcf1ZuHwukZApbY="
+        }
+      ]
+    },
+    {
+      "Route": "uploads/Copy of Elevate Your ITSM Journey with FSSolutions (2) (1).vorp8s610k.pdf",
+      "AssetFile": "uploads/Copy of Elevate Your ITSM Journey with FSSolutions (2) (1).pdf",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "8283909"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/pdf"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"kQ8e+S3rXHLOnngCNBb0KBEnkwLelcf1ZuHwukZApbY=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 10 Jul 2025 17:51:01 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "vorp8s610k"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-kQ8e+S3rXHLOnngCNBb0KBEnkwLelcf1ZuHwukZApbY="
+        },
+        {
+          "Name": "label",
+          "Value": "uploads/Copy of Elevate Your ITSM Journey with FSSolutions (2) (1).pdf"
+        }
+      ]
+    },
+    {
+      "Route": "uploads/Fatca-tnc.onhmvqs6ku.pdf",
+      "AssetFile": "uploads/Fatca-tnc.pdf",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "206076"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/pdf"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"5Gmm8uz1LDkALZQDB6vSfmL4pFbpJvTb6MrvJSFHzbE=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 10 Jul 2025 17:27:11 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "onhmvqs6ku"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-5Gmm8uz1LDkALZQDB6vSfmL4pFbpJvTb6MrvJSFHzbE="
+        },
+        {
+          "Name": "label",
+          "Value": "uploads/Fatca-tnc.pdf"
+        }
+      ]
+    },
+    {
+      "Route": "uploads/Fatca-tnc.pdf",
+      "AssetFile": "uploads/Fatca-tnc.pdf",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "206076"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/pdf"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"5Gmm8uz1LDkALZQDB6vSfmL4pFbpJvTb6MrvJSFHzbE=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 10 Jul 2025 17:27:11 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-5Gmm8uz1LDkALZQDB6vSfmL4pFbpJvTb6MrvJSFHzbE="
+        }
+      ]
+    },
+    {
+      "Route": "uploads/Individual-Current-Account-Opening-AR.pdf",
+      "AssetFile": "uploads/Individual-Current-Account-Opening-AR.pdf",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "626090"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/pdf"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"8BUvgJ+UeWC3AvGNtYKXNsr9s0wQzRcrnhk33WCsp/M=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 10 Jul 2025 17:44:48 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-8BUvgJ+UeWC3AvGNtYKXNsr9s0wQzRcrnhk33WCsp/M="
+        }
+      ]
+    },
+    {
+      "Route": "uploads/Individual-Current-Account-Opening-AR.spvmk794d2.pdf",
+      "AssetFile": "uploads/Individual-Current-Account-Opening-AR.pdf",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "626090"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/pdf"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"8BUvgJ+UeWC3AvGNtYKXNsr9s0wQzRcrnhk33WCsp/M=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 10 Jul 2025 17:44:48 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "spvmk794d2"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-8BUvgJ+UeWC3AvGNtYKXNsr9s0wQzRcrnhk33WCsp/M="
+        },
+        {
+          "Name": "label",
+          "Value": "uploads/Individual-Current-Account-Opening-AR.pdf"
+        }
+      ]
+    },
+    {
+      "Route": "uploads/MOJ_Operation and Implementation of Enterprise Risk Management.hfcgqq80ww.pdf",
+      "AssetFile": "uploads/MOJ_Operation and Implementation of Enterprise Risk Management.pdf",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "4396458"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/pdf"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"E9usXtQBeg610CvbkTr6PddyjwGEnh22jbmhwzF3bho=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 10 Jul 2025 17:53:44 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "hfcgqq80ww"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-E9usXtQBeg610CvbkTr6PddyjwGEnh22jbmhwzF3bho="
+        },
+        {
+          "Name": "label",
+          "Value": "uploads/MOJ_Operation and Implementation of Enterprise Risk Management.pdf"
+        }
+      ]
+    },
+    {
+      "Route": "uploads/MOJ_Operation and Implementation of Enterprise Risk Management.pdf",
+      "AssetFile": "uploads/MOJ_Operation and Implementation of Enterprise Risk Management.pdf",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "4396458"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/pdf"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"E9usXtQBeg610CvbkTr6PddyjwGEnh22jbmhwzF3bho=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 10 Jul 2025 17:53:44 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-E9usXtQBeg610CvbkTr6PddyjwGEnh22jbmhwzF3bho="
+        }
+      ]
+    },
+    {
+      "Route": "uploads/Virtual Ciso 360 by Flex.9edha4z8eo.pdf",
+      "AssetFile": "uploads/Virtual Ciso 360 by Flex.pdf",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "16816942"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/pdf"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"EWhG+W+/oacK8YdP/jCINliS/isaDIEhGqJaRGoxHSk=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 10 Jul 2025 17:50:13 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "9edha4z8eo"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-EWhG+W+/oacK8YdP/jCINliS/isaDIEhGqJaRGoxHSk="
+        },
+        {
+          "Name": "label",
+          "Value": "uploads/Virtual Ciso 360 by Flex.pdf"
+        }
+      ]
+    },
+    {
+      "Route": "uploads/Virtual Ciso 360 by Flex.pdf",
+      "AssetFile": "uploads/Virtual Ciso 360 by Flex.pdf",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "16816942"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/pdf"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"EWhG+W+/oacK8YdP/jCINliS/isaDIEhGqJaRGoxHSk=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 10 Jul 2025 17:50:13 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-EWhG+W+/oacK8YdP/jCINliS/isaDIEhGqJaRGoxHSk="
+        }
+      ]
+    },
+    {
+      "Route": "uploads/WeqaBCM  Proposal.nbhro9hdl5.pdf",
+      "AssetFile": "uploads/WeqaBCM  Proposal.pdf",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "3109579"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/pdf"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"jUOTTrgS3bbmV0F+qRLV7b1B+dDbDpXvxFMZ3BgajKI=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 10 Jul 2025 17:39:55 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "nbhro9hdl5"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-jUOTTrgS3bbmV0F+qRLV7b1B+dDbDpXvxFMZ3BgajKI="
+        },
+        {
+          "Name": "label",
+          "Value": "uploads/WeqaBCM  Proposal.pdf"
+        }
+      ]
+    },
+    {
+      "Route": "uploads/WeqaBCM  Proposal.pdf",
+      "AssetFile": "uploads/WeqaBCM  Proposal.pdf",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "3109579"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/pdf"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"jUOTTrgS3bbmV0F+qRLV7b1B+dDbDpXvxFMZ3BgajKI=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 10 Jul 2025 17:39:55 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-jUOTTrgS3bbmV0F+qRLV7b1B+dDbDpXvxFMZ3BgajKI="
+        }
+      ]
+    },
+    {
+      "Route": "uploads/amer.g4ichsk3ce.pdf",
+      "AssetFile": "uploads/amer.pdf",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "274808"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/pdf"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"QHg9Zba98HaGVVrJ8uXWuK+3H+I4VOY5CPSBTdv5ils=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 10 Jul 2025 17:48:59 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "g4ichsk3ce"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-QHg9Zba98HaGVVrJ8uXWuK+3H+I4VOY5CPSBTdv5ils="
+        },
+        {
+          "Name": "label",
+          "Value": "uploads/amer.pdf"
+        }
+      ]
+    },
+    {
+      "Route": "uploads/amer.pdf",
+      "AssetFile": "uploads/amer.pdf",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "274808"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/pdf"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"QHg9Zba98HaGVVrJ8uXWuK+3H+I4VOY5CPSBTdv5ils=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 10 Jul 2025 17:48:59 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-QHg9Zba98HaGVVrJ8uXWuK+3H+I4VOY5CPSBTdv5ils="
+        }
+      ]
+    },
+    {
+      "Route": "uploads/iso0000.ft4s2t5obo.pdf",
+      "AssetFile": "uploads/iso0000.pdf",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "16634644"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/pdf"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"Yy2oXIQJp+B+iIg2b0gRr03WFRDxurzgC+g/VIUXB9M=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 10 Jul 2025 17:50:51 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "ft4s2t5obo"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-Yy2oXIQJp+B+iIg2b0gRr03WFRDxurzgC+g/VIUXB9M="
+        },
+        {
+          "Name": "label",
+          "Value": "uploads/iso0000.pdf"
+        }
+      ]
+    },
+    {
+      "Route": "uploads/iso0000.pdf",
+      "AssetFile": "uploads/iso0000.pdf",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "16634644"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/pdf"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"Yy2oXIQJp+B+iIg2b0gRr03WFRDxurzgC+g/VIUXB9M=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 10 Jul 2025 17:50:51 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-Yy2oXIQJp+B+iIg2b0gRr03WFRDxurzgC+g/VIUXB9M="
+        }
+      ]
+    },
+    {
+      "Route": "uploads/jirisy_compressed.0b22tpg340.pdf",
+      "AssetFile": "uploads/jirisy_compressed.pdf",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "13416957"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/pdf"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"LHkCohpCTL4J2dDhSSnO3maRrFp5TOCcNcRxekPfjeY=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 10 Jul 2025 17:49:25 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "0b22tpg340"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-LHkCohpCTL4J2dDhSSnO3maRrFp5TOCcNcRxekPfjeY="
+        },
+        {
+          "Name": "label",
+          "Value": "uploads/jirisy_compressed.pdf"
+        }
+      ]
+    },
+    {
+      "Route": "uploads/jirisy_compressed.pdf",
+      "AssetFile": "uploads/jirisy_compressed.pdf",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "13416957"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/pdf"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"LHkCohpCTL4J2dDhSSnO3maRrFp5TOCcNcRxekPfjeY=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 10 Jul 2025 17:49:25 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-LHkCohpCTL4J2dDhSSnO3maRrFp5TOCcNcRxekPfjeY="
+        }
+      ]
+    },
+    {
+      "Route": "uploads/كراسة شهادة الايزو (1).ft4s2t5obo.pdf",
+      "AssetFile": "uploads/كراسة شهادة الايزو (1).pdf",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "16634644"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/pdf"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"Yy2oXIQJp+B+iIg2b0gRr03WFRDxurzgC+g/VIUXB9M=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 10 Jul 2025 17:58:54 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "ft4s2t5obo"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-Yy2oXIQJp+B+iIg2b0gRr03WFRDxurzgC+g/VIUXB9M="
+        },
+        {
+          "Name": "label",
+          "Value": "uploads/كراسة شهادة الايزو (1).pdf"
+        }
+      ]
+    },
+    {
+      "Route": "uploads/كراسة شهادة الايزو (1).pdf",
+      "AssetFile": "uploads/كراسة شهادة الايزو (1).pdf",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "16634644"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/pdf"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"Yy2oXIQJp+B+iIg2b0gRr03WFRDxurzgC+g/VIUXB9M=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 10 Jul 2025 17:58:54 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-Yy2oXIQJp+B+iIg2b0gRr03WFRDxurzgC+g/VIUXB9M="
+        }
+      ]
+    },
+    {
+      "Route": "uploads/كيفية تنفيذ الاعمال والخدمات اجراءات ادارة البيانات (1).ma06alphd9.pdf",
+      "AssetFile": "uploads/كيفية تنفيذ الاعمال والخدمات اجراءات ادارة البيانات (1).pdf",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "5230460"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/pdf"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"Aivwk6Obk0q4+yVSk3gmy/GhjKAYgdXOkUii4it8tO8=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 10 Jul 2025 17:58:40 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "ma06alphd9"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-Aivwk6Obk0q4+yVSk3gmy/GhjKAYgdXOkUii4it8tO8="
+        },
+        {
+          "Name": "label",
+          "Value": "uploads/كيفية تنفيذ الاعمال والخدمات اجراءات ادارة البيانات (1).pdf"
+        }
+      ]
+    },
+    {
+      "Route": "uploads/كيفية تنفيذ الاعمال والخدمات اجراءات ادارة البيانات (1).pdf",
+      "AssetFile": "uploads/كيفية تنفيذ الاعمال والخدمات اجراءات ادارة البيانات (1).pdf",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "5230460"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/pdf"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"Aivwk6Obk0q4+yVSk3gmy/GhjKAYgdXOkUii4it8tO8=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 10 Jul 2025 17:58:40 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-Aivwk6Obk0q4+yVSk3gmy/GhjKAYgdXOkUii4it8tO8="
+        }
+      ]
+    },
+    {
+      "Route": "uploads/كيفية تنفيذ الاعمال والخدمات اجراءات ادارة البيانات.ma06alphd9.pdf",
+      "AssetFile": "uploads/كيفية تنفيذ الاعمال والخدمات اجراءات ادارة البيانات.pdf",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "5230460"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/pdf"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"Aivwk6Obk0q4+yVSk3gmy/GhjKAYgdXOkUii4it8tO8=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 10 Jul 2025 17:55:25 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "ma06alphd9"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-Aivwk6Obk0q4+yVSk3gmy/GhjKAYgdXOkUii4it8tO8="
+        },
+        {
+          "Name": "label",
+          "Value": "uploads/كيفية تنفيذ الاعمال والخدمات اجراءات ادارة البيانات.pdf"
+        }
+      ]
+    },
+    {
+      "Route": "uploads/كيفية تنفيذ الاعمال والخدمات اجراءات ادارة البيانات.pdf",
+      "AssetFile": "uploads/كيفية تنفيذ الاعمال والخدمات اجراءات ادارة البيانات.pdf",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "5230460"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/pdf"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"Aivwk6Obk0q4+yVSk3gmy/GhjKAYgdXOkUii4it8tO8=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 10 Jul 2025 17:55:25 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-Aivwk6Obk0q4+yVSk3gmy/GhjKAYgdXOkUii4it8tO8="
+        }
+      ]
+    }
+  ]
+}

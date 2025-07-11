@@ -1,0 +1,26 @@
+D:\FileCompressor\FileCompressor\wwwroot\index.html
+wwwroot\compressed\amer_compressed.pdf
+wwwroot\compressed\Copy of Elevate Your ITSM Journey with FSSolutions (2) (1)_compressed.pdf
+wwwroot\compressed\Fatca-tnc_compressed.pdf
+wwwroot\compressed\Individual-Current-Account-Opening-AR_compressed.pdf
+wwwroot\compressed\iso0000_compressed.pdf
+wwwroot\compressed\jirisy_compressed_compressed.pdf
+wwwroot\compressed\MOJ_Operation and Implementation of Enterprise Risk Management_compressed.pdf
+wwwroot\compressed\Virtual Ciso 360 by Flex_compressed.pdf
+wwwroot\compressed\WeqaBCM  Proposal_compressed.pdf
+wwwroot\compressed\كراسة شهادة الايزو (1)_compressed.pdf
+wwwroot\compressed\كيفية تنفيذ الاعمال والخدمات اجراءات ادارة البيانات (1)_compressed.pdf
+wwwroot\compressed\كيفية تنفيذ الاعمال والخدمات اجراءات ادارة البيانات_compressed.pdf
+wwwroot\index.html
+wwwroot\uploads\amer.pdf
+wwwroot\uploads\Copy of Elevate Your ITSM Journey with FSSolutions (2) (1).pdf
+wwwroot\uploads\Fatca-tnc.pdf
+wwwroot\uploads\Individual-Current-Account-Opening-AR.pdf
+wwwroot\uploads\iso0000.pdf
+wwwroot\uploads\jirisy_compressed.pdf
+wwwroot\uploads\MOJ_Operation and Implementation of Enterprise Risk Management.pdf
+wwwroot\uploads\Virtual Ciso 360 by Flex.pdf
+wwwroot\uploads\WeqaBCM  Proposal.pdf
+wwwroot\uploads\كراسة شهادة الايزو (1).pdf
+wwwroot\uploads\كيفية تنفيذ الاعمال والخدمات اجراءات ادارة البيانات (1).pdf
+wwwroot\uploads\كيفية تنفيذ الاعمال والخدمات اجراءات ادارة البيانات.pdf

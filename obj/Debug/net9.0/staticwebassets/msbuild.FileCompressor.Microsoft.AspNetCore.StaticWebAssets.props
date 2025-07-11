@@ -1,0 +1,454 @@
+﻿<Project>
+  <ItemGroup>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\compressed\amer_compressed.pdf'))">
+      <SourceType>Package</SourceType>
+      <SourceId>FileCompressor</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/FileCompressor</BasePath>
+      <RelativePath>compressed/amer_compressed.pdf</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <Fingerprint>feikcvhr8w</Fingerprint>
+      <Integrity>2S3L974Pvcqd36LAF6Ncr0eD0r8W9OdzVOrf582hY6c=</Integrity>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\compressed\amer_compressed.pdf'))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\compressed\Copy of Elevate Your ITSM Journey with FSSolutions (2) (1)_compressed.pdf'))">
+      <SourceType>Package</SourceType>
+      <SourceId>FileCompressor</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/FileCompressor</BasePath>
+      <RelativePath>compressed/Copy of Elevate Your ITSM Journey with FSSolutions (2) (1)_compressed.pdf</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <Fingerprint>foqhi7pnhl</Fingerprint>
+      <Integrity>sUAGkiLWLGm3Wn2lBpAYq7j81WH2UaqV2KPk++SF1BI=</Integrity>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\compressed\Copy of Elevate Your ITSM Journey with FSSolutions (2) (1)_compressed.pdf'))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\compressed\Fatca-tnc_compressed.pdf'))">
+      <SourceType>Package</SourceType>
+      <SourceId>FileCompressor</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/FileCompressor</BasePath>
+      <RelativePath>compressed/Fatca-tnc_compressed.pdf</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <Fingerprint>1kk3kvmwox</Fingerprint>
+      <Integrity>L6XzmrKfo57O8UpE9ilpgdQlVcZjlbAVFdzg/z7BZyA=</Integrity>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\compressed\Fatca-tnc_compressed.pdf'))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\compressed\Individual-Current-Account-Opening-AR_compressed.pdf'))">
+      <SourceType>Package</SourceType>
+      <SourceId>FileCompressor</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/FileCompressor</BasePath>
+      <RelativePath>compressed/Individual-Current-Account-Opening-AR_compressed.pdf</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <Fingerprint>ud68rzfj67</Fingerprint>
+      <Integrity>UulwVf8RwF9+vSKDx6fU3lZQgj6FzhTQfctOQe3G4a4=</Integrity>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\compressed\Individual-Current-Account-Opening-AR_compressed.pdf'))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\compressed\iso0000_compressed.pdf'))">
+      <SourceType>Package</SourceType>
+      <SourceId>FileCompressor</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/FileCompressor</BasePath>
+      <RelativePath>compressed/iso0000_compressed.pdf</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <Fingerprint>tz70qdivfe</Fingerprint>
+      <Integrity>h0nr/jvOVZyGlmzidoFQtDSCNl7MDEfV3Gepz3i3Xzk=</Integrity>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\compressed\iso0000_compressed.pdf'))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\compressed\jirisy_compressed_compressed.pdf'))">
+      <SourceType>Package</SourceType>
+      <SourceId>FileCompressor</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/FileCompressor</BasePath>
+      <RelativePath>compressed/jirisy_compressed_compressed.pdf</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <Fingerprint>czltlss6wg</Fingerprint>
+      <Integrity>eIZ7HBI/46rbe8OP7FBL8dTgzYhqr57Z02cJ5tUYus4=</Integrity>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\compressed\jirisy_compressed_compressed.pdf'))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\compressed\MOJ_Operation and Implementation of Enterprise Risk Management_compressed.pdf'))">
+      <SourceType>Package</SourceType>
+      <SourceId>FileCompressor</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/FileCompressor</BasePath>
+      <RelativePath>compressed/MOJ_Operation and Implementation of Enterprise Risk Management_compressed.pdf</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <Fingerprint>caxvi3toy2</Fingerprint>
+      <Integrity>RMhIDnTWzXEDLp2KxUKLgYLBaGDI1uTF3rQoEuduSdI=</Integrity>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\compressed\MOJ_Operation and Implementation of Enterprise Risk Management_compressed.pdf'))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\compressed\Virtual Ciso 360 by Flex_compressed.pdf'))">
+      <SourceType>Package</SourceType>
+      <SourceId>FileCompressor</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/FileCompressor</BasePath>
+      <RelativePath>compressed/Virtual Ciso 360 by Flex_compressed.pdf</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <Fingerprint>mcvja87ir3</Fingerprint>
+      <Integrity>ioBrxu5jusaamGvSSDUA1dgY9CvW1nt1IrkDv+XYtMo=</Integrity>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\compressed\Virtual Ciso 360 by Flex_compressed.pdf'))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\compressed\WeqaBCM  Proposal_compressed.pdf'))">
+      <SourceType>Package</SourceType>
+      <SourceId>FileCompressor</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/FileCompressor</BasePath>
+      <RelativePath>compressed/WeqaBCM  Proposal_compressed.pdf</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <Fingerprint>4zdq2py0s3</Fingerprint>
+      <Integrity>wNBnCPNSwFv/F/4hmWXL3EGrYFeQMGfgAUOueTTN2VA=</Integrity>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\compressed\WeqaBCM  Proposal_compressed.pdf'))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\compressed\كراسة شهادة الايزو (1)_compressed.pdf'))">
+      <SourceType>Package</SourceType>
+      <SourceId>FileCompressor</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/FileCompressor</BasePath>
+      <RelativePath>compressed/كراسة شهادة الايزو (1)_compressed.pdf</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <Fingerprint>7403itr73x</Fingerprint>
+      <Integrity>V3nVWtwmL2JchGVfqj4AT7xtR486/i/62dHbaj3UYHg=</Integrity>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\compressed\كراسة شهادة الايزو (1)_compressed.pdf'))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\compressed\كيفية تنفيذ الاعمال والخدمات اجراءات ادارة البيانات (1)_compressed.pdf'))">
+      <SourceType>Package</SourceType>
+      <SourceId>FileCompressor</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/FileCompressor</BasePath>
+      <RelativePath>compressed/كيفية تنفيذ الاعمال والخدمات اجراءات ادارة البيانات (1)_compressed.pdf</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <Fingerprint>fsckt6cu59</Fingerprint>
+      <Integrity>v9KOpIzTr+pp8zIAsrX49ATMzc/+Q3jBUG33IR8VJZ4=</Integrity>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\compressed\كيفية تنفيذ الاعمال والخدمات اجراءات ادارة البيانات (1)_compressed.pdf'))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\compressed\كيفية تنفيذ الاعمال والخدمات اجراءات ادارة البيانات_compressed.pdf'))">
+      <SourceType>Package</SourceType>
+      <SourceId>FileCompressor</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/FileCompressor</BasePath>
+      <RelativePath>compressed/كيفية تنفيذ الاعمال والخدمات اجراءات ادارة البيانات_compressed.pdf</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <Fingerprint>a7wrc6pp0x</Fingerprint>
+      <Integrity>OvBH0sHM353/M4KMQz3Hd/iMAHumwTkiveZNPjZbBjc=</Integrity>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\compressed\كيفية تنفيذ الاعمال والخدمات اجراءات ادارة البيانات_compressed.pdf'))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\index.html'))">
+      <SourceType>Package</SourceType>
+      <SourceId>FileCompressor</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/FileCompressor</BasePath>
+      <RelativePath>index.html</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <Fingerprint>91y3n5gr1i</Fingerprint>
+      <Integrity>DTqwnDO8SwRKLIx2KJ6gPLwhv/slVD65UAHdgkEAw/s=</Integrity>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\index.html'))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\uploads\amer.pdf'))">
+      <SourceType>Package</SourceType>
+      <SourceId>FileCompressor</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/FileCompressor</BasePath>
+      <RelativePath>uploads/amer.pdf</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <Fingerprint>g4ichsk3ce</Fingerprint>
+      <Integrity>QHg9Zba98HaGVVrJ8uXWuK+3H+I4VOY5CPSBTdv5ils=</Integrity>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\uploads\amer.pdf'))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\uploads\Copy of Elevate Your ITSM Journey with FSSolutions (2) (1).pdf'))">
+      <SourceType>Package</SourceType>
+      <SourceId>FileCompressor</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/FileCompressor</BasePath>
+      <RelativePath>uploads/Copy of Elevate Your ITSM Journey with FSSolutions (2) (1).pdf</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <Fingerprint>vorp8s610k</Fingerprint>
+      <Integrity>kQ8e+S3rXHLOnngCNBb0KBEnkwLelcf1ZuHwukZApbY=</Integrity>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\uploads\Copy of Elevate Your ITSM Journey with FSSolutions (2) (1).pdf'))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\uploads\Fatca-tnc.pdf'))">
+      <SourceType>Package</SourceType>
+      <SourceId>FileCompressor</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/FileCompressor</BasePath>
+      <RelativePath>uploads/Fatca-tnc.pdf</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <Fingerprint>onhmvqs6ku</Fingerprint>
+      <Integrity>5Gmm8uz1LDkALZQDB6vSfmL4pFbpJvTb6MrvJSFHzbE=</Integrity>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\uploads\Fatca-tnc.pdf'))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\uploads\Individual-Current-Account-Opening-AR.pdf'))">
+      <SourceType>Package</SourceType>
+      <SourceId>FileCompressor</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/FileCompressor</BasePath>
+      <RelativePath>uploads/Individual-Current-Account-Opening-AR.pdf</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <Fingerprint>spvmk794d2</Fingerprint>
+      <Integrity>8BUvgJ+UeWC3AvGNtYKXNsr9s0wQzRcrnhk33WCsp/M=</Integrity>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\uploads\Individual-Current-Account-Opening-AR.pdf'))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\uploads\iso0000.pdf'))">
+      <SourceType>Package</SourceType>
+      <SourceId>FileCompressor</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/FileCompressor</BasePath>
+      <RelativePath>uploads/iso0000.pdf</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <Fingerprint>ft4s2t5obo</Fingerprint>
+      <Integrity>Yy2oXIQJp+B+iIg2b0gRr03WFRDxurzgC+g/VIUXB9M=</Integrity>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\uploads\iso0000.pdf'))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\uploads\jirisy_compressed.pdf'))">
+      <SourceType>Package</SourceType>
+      <SourceId>FileCompressor</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/FileCompressor</BasePath>
+      <RelativePath>uploads/jirisy_compressed.pdf</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <Fingerprint>0b22tpg340</Fingerprint>
+      <Integrity>LHkCohpCTL4J2dDhSSnO3maRrFp5TOCcNcRxekPfjeY=</Integrity>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\uploads\jirisy_compressed.pdf'))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\uploads\MOJ_Operation and Implementation of Enterprise Risk Management.pdf'))">
+      <SourceType>Package</SourceType>
+      <SourceId>FileCompressor</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/FileCompressor</BasePath>
+      <RelativePath>uploads/MOJ_Operation and Implementation of Enterprise Risk Management.pdf</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <Fingerprint>hfcgqq80ww</Fingerprint>
+      <Integrity>E9usXtQBeg610CvbkTr6PddyjwGEnh22jbmhwzF3bho=</Integrity>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\uploads\MOJ_Operation and Implementation of Enterprise Risk Management.pdf'))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\uploads\Virtual Ciso 360 by Flex.pdf'))">
+      <SourceType>Package</SourceType>
+      <SourceId>FileCompressor</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/FileCompressor</BasePath>
+      <RelativePath>uploads/Virtual Ciso 360 by Flex.pdf</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <Fingerprint>9edha4z8eo</Fingerprint>
+      <Integrity>EWhG+W+/oacK8YdP/jCINliS/isaDIEhGqJaRGoxHSk=</Integrity>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\uploads\Virtual Ciso 360 by Flex.pdf'))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\uploads\WeqaBCM  Proposal.pdf'))">
+      <SourceType>Package</SourceType>
+      <SourceId>FileCompressor</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/FileCompressor</BasePath>
+      <RelativePath>uploads/WeqaBCM  Proposal.pdf</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <Fingerprint>nbhro9hdl5</Fingerprint>
+      <Integrity>jUOTTrgS3bbmV0F+qRLV7b1B+dDbDpXvxFMZ3BgajKI=</Integrity>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\uploads\WeqaBCM  Proposal.pdf'))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\uploads\كراسة شهادة الايزو (1).pdf'))">
+      <SourceType>Package</SourceType>
+      <SourceId>FileCompressor</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/FileCompressor</BasePath>
+      <RelativePath>uploads/كراسة شهادة الايزو (1).pdf</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <Fingerprint>ft4s2t5obo</Fingerprint>
+      <Integrity>Yy2oXIQJp+B+iIg2b0gRr03WFRDxurzgC+g/VIUXB9M=</Integrity>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\uploads\كراسة شهادة الايزو (1).pdf'))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\uploads\كيفية تنفيذ الاعمال والخدمات اجراءات ادارة البيانات (1).pdf'))">
+      <SourceType>Package</SourceType>
+      <SourceId>FileCompressor</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/FileCompressor</BasePath>
+      <RelativePath>uploads/كيفية تنفيذ الاعمال والخدمات اجراءات ادارة البيانات (1).pdf</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <Fingerprint>ma06alphd9</Fingerprint>
+      <Integrity>Aivwk6Obk0q4+yVSk3gmy/GhjKAYgdXOkUii4it8tO8=</Integrity>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\uploads\كيفية تنفيذ الاعمال والخدمات اجراءات ادارة البيانات (1).pdf'))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\uploads\كيفية تنفيذ الاعمال والخدمات اجراءات ادارة البيانات.pdf'))">
+      <SourceType>Package</SourceType>
+      <SourceId>FileCompressor</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/FileCompressor</BasePath>
+      <RelativePath>uploads/كيفية تنفيذ الاعمال والخدمات اجراءات ادارة البيانات.pdf</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <Fingerprint>ma06alphd9</Fingerprint>
+      <Integrity>Aivwk6Obk0q4+yVSk3gmy/GhjKAYgdXOkUii4it8tO8=</Integrity>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\uploads\كيفية تنفيذ الاعمال والخدمات اجراءات ادارة البيانات.pdf'))</OriginalItemSpec>
+    </StaticWebAsset>
+  </ItemGroup>
+</Project>
