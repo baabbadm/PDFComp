@@ -1,149 +1,68 @@
-
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
+<html lang="ar">
 <head>
-  <meta charset="UTF-8" />
-  <title>PDF Compressor</title>
-  <style>
-    body {
-      font-family: Tahoma, sans-serif;
-      background: #f4f4f4;
-      padding: 40px;
-      text-align: center;
-    }
-
-    h1 {
-      color: #333;
-    }
-
-    form {
-      background: #fff;
-      padding: 30px;
-      border-radius: 12px;
-      display: inline-block;
-      box-shadow: 0 0 10px rgba(0,0,0,0.1);
-    }
-
-    input[type="file"], select {
-      padding: 10px;
-      margin-bottom: 20px;
-      border: 1px solid #ccc;
-      border-radius: 6px;
-    }
-
-    button {
-      padding: 10px 20px;
-      background: #007bff;
-      color: #fff;
-      border: none;
-      border-radius: 6px;
-      cursor: pointer;
-      font-size: 16px;
-    }
-
-    #lang-switch {
-      position: absolute;
-      top: 15px;
-      left: 20px;
-      background: #eee;
-      padding: 5px 10px;
-      border-radius: 6px;
-      cursor: pointer;
-      font-size: 14px;
-    }
-
-    .spinner {
-      margin: 20px auto 10px;
-      border: 4px solid #f3f3f3;
-      border-top: 4px solid #007bff;
-      border-radius: 50%;
-      width: 30px;
-      height: 30px;
-      animation: spin 1s linear infinite;
-      display: inline-block;
-    }
-
-    @keyframes spin {
-      0% { transform: rotate(0deg); }
-      100% { transform: rotate(360deg); }
-    }
-
-    .loading-text {
-      margin-top: 10px;
-      color: #007bff;
-      font-weight: bold;
-    }
-  </style>
+    <meta charset="UTF-8">
+    <title>ضغط ملفات PDF</title>
+    <style>
+        body { font-family: Arial; direction: rtl; text-align: center; margin: 50px; }
+        #result { margin-top: 20px; display: none; }
+        #progress { display: none; }
+    </style>
 </head>
 <body>
+    <h2>ضغط ملف PDF</h2>
+    <form id="compressForm">
+        <input type="file" id="fileInput" name="file" accept=".pdf" required>
+        <select id="quality">
+            <option value="/screen">شاشة (ضغط عالي)</option>
+            <option value="/ebook" selected>كتاب إلكتروني (موصى به)</option>
+            <option value="/printer">طباعة</option>
+            <option value="/prepress">جودة عالية جدًا</option>
+        </select>
+        <button type="submit">ضغط</button>
+    </form>
 
-  <div id="lang-switch">🇸🇦 العربية</div>
-
-  <h1 id="title">🗜️ PDF Compressor</h1>
-  <form id="uploadForm" method="post" enctype="multipart/form-data" action="/api/compress/pdf-direct" target="_blank">
-    <input type="file" id="pdfFile" name="file" accept="application/pdf" required /><br>
-
-    <label for="quality" id="qualityLabel">Select Quality:</label><br>
-    <select id="quality" name="quality" required>
-      <option value="/screen">📉 Low (Smallest size)</option>
-      <option value="/ebook" selected>📘 Medium (Balanced)</option>
-      <option value="/printer">🖨️ High (Best quality)</option>
-    </select><br>
-
-    <button type="submit" id="submitBtn">Compress Now</button>
-    <div id="loading" style="display:none;">
-      <div class="spinner"></div>
-      <div class="loading-text" id="loadingText">Compressing...</div>
+    <div id="progress">⏳ جارٍ الضغط...</div>
+    <div id="result">
+        ✅ <a id="downloadLink" href="#" target="_blank">تحميل الملف المضغوط</a>
     </div>
-  </form>
 
-  <script>
-    const langSwitch = document.getElementById("lang-switch");
-    const title = document.getElementById("title");
-    const qualityLabel = document.getElementById("qualityLabel");
-    const submitBtn = document.getElementById("submitBtn");
-    const loading = document.getElementById("loading");
-    const loadingText = document.getElementById("loadingText");
+    <script>
+        const form = document.getElementById('compressForm');
+        const progress = document.getElementById('progress');
+        const result = document.getElementById('result');
+        const downloadLink = document.getElementById('downloadLink');
 
-    let currentLang = navigator.language.startsWith('ar') ? 'ar' : 'en';
+        form.addEventListener('submit', async function(e) {
+            e.preventDefault(); // منع إعادة تحميل الصفحة
 
-    const translations = {
-      ar: {
-        title: "🗜️ ضغط ملف PDF",
-        qualityLabel: "اختر الجودة:",
-        button: "ضغط الآن",
-        loading: "جارٍ الضغط...",
-        switch: "English 🇬🇧"
-      },
-      en: {
-        title: "🗜️ PDF Compressor",
-        qualityLabel: "Select Quality:",
-        button: "Compress Now",
-        loading: "Compressing...",
-        switch: "🇸🇦 العربية"
-      }
-    };
+            result.style.display = 'none';
+            progress.style.display = 'block';
 
-    function applyLanguage(lang) {
-      document.documentElement.lang = lang;
-      document.documentElement.dir = lang === 'ar' ? 'rtl' : 'ltr';
-      title.innerText = translations[lang].title;
-      qualityLabel.innerText = translations[lang].qualityLabel;
-      submitBtn.innerText = translations[lang].button;
-      loadingText.innerText = translations[lang].loading;
-      langSwitch.innerText = translations[lang].switch;
-    }
+            const fileInput = document.getElementById('fileInput');
+            const quality = document.getElementById('quality').value;
+            const formData = new FormData();
+            formData.append("file", fileInput.files[0]);
 
-    langSwitch.addEventListener('click', () => {
-      currentLang = currentLang === 'ar' ? 'en' : 'ar';
-      applyLanguage(currentLang);
-    });
+            try {
+                const response = await fetch(`/api/compress/pdf-direct?quality=${encodeURIComponent(quality)}`, {
+                    method: "POST",
+                    body: formData
+                });
 
-    applyLanguage(currentLang);
-
-    submitBtn.addEventListener("click", () => {
-      loading.style.display = "block";
-    });
-  </script>
+                const data = await response.json();
+                if (response.ok && data.fileUrl) {
+                    downloadLink.href = data.fileUrl;
+                    result.style.display = 'block';
+                } else {
+                    alert("فشل الضغط. حاول مرة أخرى.");
+                }
+            } catch (error) {
+                alert("حدث خطأ أثناء الإرسال.");
+            } finally {
+                progress.style.display = 'none';
+            }
+        });
+    </script>
 </body>
 </html>
