@@ -28,6 +28,6 @@ app.UseRouting();
 app.MapControllers();
 
 // ✅ تشغيل التطبيق
-app.MapFallbackToFile("index.html");
+app.MapFallbackToFile("auth.html");
 
 app.Run();
