@@ -16,7 +16,7 @@ namespace FileCompressor.Services
             if (!File.Exists(_gsExecutablePath))
                 throw new FileNotFoundException($"Ghostscript not found at {_gsExecutablePath}");
 
-            var args = $"-sDEVICE=pdfwrite -dCompatibilityLevel=1.4 -dPDFSETTINGS={quality} -dNOPAUSE -dQUIET -dBATCH -sOutputFile="{outputPath}" "{inputPath}"";
+            var args = $"-sDEVICE=pdfwrite -dCompatibilityLevel=1.4 -dPDFSETTINGS={quality} -dNOPAUSE -dQUIET -dBATCH -sOutputFile=\"{outputPath}\" \"{inputPath}\"";
 
             var process = new Process
             {
