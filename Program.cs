@@ -20,7 +20,7 @@ if (app.Environment.IsDevelopment())
 }
 
 // ✅ دعم HTTPS وملفات wwwroot
-app.UseHttpsRedirection();
+//app.UseHttpsRedirection();
 app.UseStaticFiles();
 
 // ✅ تفعيل الـ Routing وتسجيل الـ Controllers
@@ -28,4 +28,6 @@ app.UseRouting();
 app.MapControllers();
 
 // ✅ تشغيل التطبيق
+app.MapFallbackToFile("index.html");
+
 app.Run();
