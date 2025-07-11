@@ -2,118 +2,84 @@
 <html lang="en" dir="ltr">
 <head>
   <meta charset="UTF-8" />
-  <title>Login / Register</title>
+  <title>Login | PDF Compressor</title>
   <style>
     body {
       font-family: Tahoma, sans-serif;
-      background: #f9f9f9;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      height: 100vh;
-    }
-
-    .auth-container {
-      background: white;
-      padding: 30px;
-      border-radius: 12px;
-      box-shadow: 0 0 10px rgba(0,0,0,0.1);
-      width: 300px;
+      background: #f4f4f4;
+      padding: 60px;
       text-align: center;
     }
 
-    h2 {
-      margin-bottom: 20px;
+    form {
+      background: #fff;
+      padding: 30px;
+      border-radius: 12px;
+      display: inline-block;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
     }
 
-    input {
-      width: 100%;
-      padding: 10px;
-      margin: 8px 0;
+    input[type="email"],
+    input[type="password"] {
+      display: block;
+      margin: 10px auto;
+      padding: 12px;
+      width: 250px;
       border: 1px solid #ccc;
       border-radius: 6px;
     }
 
     button {
-      padding: 10px;
-      width: 100%;
-      background: #007bff;
-      color: white;
+      padding: 10px 20px;
+      background: #28a745;
+      color: #fff;
       border: none;
       border-radius: 6px;
       cursor: pointer;
+      font-size: 16px;
       margin-top: 10px;
     }
 
-    .toggle {
-      margin-top: 15px;
-      color: #007bff;
-      cursor: pointer;
-      font-size: 14px;
+    h2 {
+      color: #333;
     }
 
     .error {
       color: red;
       margin-top: 10px;
-      font-size: 14px;
+      display: none;
     }
   </style>
 </head>
 <body>
 
-<div class="auth-container">
-  <h2 id="form-title">Login</h2>
-  <div id="form-error" class="error"></div>
+  <h2>🔐 Login to continue</h2>
 
-  <form id="authForm">
+  <form id="loginForm">
     <input type="email" id="email" placeholder="Email" required />
     <input type="password" id="password" placeholder="Password" required />
-    <button type="submit" id="submitBtn">Login</button>
+    <button type="submit">Login</button>
+    <div class="error" id="errorMessage">Invalid credentials. Try again.</div>
   </form>
 
-  <div class="toggle" id="toggleForm">Don't have an account? Register</div>
-</div>
+  <script>
+    const loginForm = document.getElementById("loginForm");
+    const errorMessage = document.getElementById("errorMessage");
 
-<script>
-  let isLogin = true;
+    loginForm.addEventListener("submit", function (e) {
+      e.preventDefault();
 
-  const form = document.getElementById("authForm");
-  const toggle = document.getElementById("toggleForm");
-  const title = document.getElementById("form-title");
-  const submitBtn = document.getElementById("submitBtn");
-  const errorDiv = document.getElementById("form-error");
+      const email = document.getElementById("email").value.trim();
+      const password = document.getElementById("password").value.trim();
 
-  toggle.addEventListener("click", () => {
-    isLogin = !isLogin;
-    title.innerText = isLogin ? "Login" : "Register";
-    submitBtn.innerText = isLogin ? "Login" : "Register";
-    toggle.innerText = isLogin ? "Don't have an account? Register" : "Already have an account? Login";
-    errorDiv.innerText = "";
-  });
-
-  form.addEventListener("submit", async (e) => {
-    e.preventDefault();
-    const email = document.getElementById("email").value;
-    const password = document.getElementById("password").value;
-
-    const url = isLogin ? "/api/login" : "/api/register";
-
-    const res = await fetch(url, {
-      method: "POST",
-      headers: { "Content-Type": "application/json" },
-      body: JSON.stringify({ email, password })
+      // يمكن استبداله لاحقًا بالتوثيق الفعلي
+      if (email && password) {
+        sessionStorage.setItem("loggedIn", "true");
+        window.location.href = "index.html";
+      } else {
+        errorMessage.style.display = "block";
+      }
     });
-
-    const data = await res.json();
-    if (!res.ok) {
-      errorDiv.innerText = data.message || "Something went wrong!";
-    } else {
-      // Save token & redirect
-      localStorage.setItem("token", data.token);
-      window.location.href = "/";
-    }
-  });
-</script>
-
+  </script>
 </body>
 </html>
