@@ -1,4 +1,5 @@
 using Microsoft.EntityFrameworkCore;
+using FileCompressor.Models;
 
 namespace FileCompressor.Data
 {
