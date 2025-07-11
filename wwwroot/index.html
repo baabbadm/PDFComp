@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
 <head>
@@ -79,7 +80,7 @@
   <div id="lang-switch">🇸🇦 العربية</div>
 
   <h1 id="title">🗜️ PDF Compressor</h1>
-  <form id="uploadForm" enctype="multipart/form-data">
+  <form id="uploadForm" method="post" enctype="multipart/form-data" action="/api/compress/pdf-direct" target="_blank">
     <input type="file" id="pdfFile" name="file" accept="application/pdf" required /><br>
 
     <label for="quality" id="qualityLabel">Select Quality:</label><br>
@@ -140,41 +141,8 @@
 
     applyLanguage(currentLang);
 
-    document.getElementById("uploadForm").addEventListener("submit", function (e) {
-      e.preventDefault();
-
-      const fileInput = document.getElementById("pdfFile");
-      const quality = document.getElementById("quality").value;
-
-      if (!fileInput.files.length) return;
-
+    submitBtn.addEventListener("click", () => {
       loading.style.display = "block";
-
-      const formData = new FormData();
-      formData.append("file", fileInput.files[0]);
-      formData.append("quality", quality);
-
-      fetch("/api/compress/pdf-direct", {
-        method: "POST",
-        body: formData
-      })
-        .then(res => {
-          if (!res.ok) throw new Error("Compression failed");
-          return res.json();
-        })
-        .then(data => {
-          loading.style.display = "none";
-          const link = document.createElement("a");
-          link.href = data.fileUrl;
-          link.download = "";
-          document.body.appendChild(link);
-          link.click();
-          document.body.removeChild(link);
-        })
-        .catch(err => {
-          loading.style.display = "none";
-          alert("❌ Compression failed. Please try again.");
-        });
     });
   </script>
 </body>
