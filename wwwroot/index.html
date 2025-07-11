@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
 <head>
@@ -77,10 +76,17 @@
 </head>
 <body>
 
+  <script>
+    // ✅ تحقق من الجلسة
+    if (!sessionStorage.getItem("loggedIn")) {
+      window.location.href = "auth.html";
+    }
+  </script>
+
   <div id="lang-switch">🇸🇦 العربية</div>
 
   <h1 id="title">🗜️ PDF Compressor</h1>
-  <form id="uploadForm" method="post" enctype="multipart/form-data" action="/api/compress/pdf-direct" target="_blank">
+  <form id="uploadForm" method="post" enctype="multipart/form-data" action="/api/compress/pdf-direct">
     <input type="file" id="pdfFile" name="file" accept="application/pdf" required /><br>
 
     <label for="quality" id="qualityLabel">Select Quality:</label><br>
@@ -141,8 +147,26 @@
 
     applyLanguage(currentLang);
 
-    submitBtn.addEventListener("click", () => {
+    document.getElementById("uploadForm").addEventListener("submit", async function (e) {
+      e.preventDefault(); // امنع الانتقال
+
       loading.style.display = "block";
+
+      const formData = new FormData(this);
+
+      const response = await fetch("/api/compress/pdf-direct", {
+        method: "POST",
+        body: formData
+      });
+
+      const blob = await response.blob();
+
+      const link = document.createElement("a");
+      link.href = window.URL.createObjectURL(blob);
+      link.download = "compressed.pdf";
+      link.click();
+
+      loading.style.display = "none";
     });
   </script>
 </body>
