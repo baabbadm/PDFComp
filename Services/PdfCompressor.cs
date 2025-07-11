@@ -8,7 +8,7 @@ namespace FileCompressor.Services
 
         public PdfCompressor(IWebHostEnvironment env)
         {
-            _gsExecutablePath = Path.Combine(env.ContentRootPath, "gs", "bin", "gswin64c.exe");
+         _gsExecutablePath = "gs";
         }
 
         public async Task<bool> CompressPdfAsync(string inputPath, string outputPath, string quality = "/ebook")
