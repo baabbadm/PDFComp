@@ -1,44 +1,58 @@
-using Microsoft.AspNetCore.Mvc;
 using FileCompressor.Services;
-using System.IO;
+using Microsoft.AspNetCore.Mvc;
+using System.Diagnostics;
 
 namespace FileCompressor.Controllers
 {
-    [Route("api/[controller]")]
+    [Route("api/compress")]
     [ApiController]
     public class CompressController : ControllerBase
     {
-        private readonly IWebHostEnvironment _env;
         private readonly PdfCompressor _compressor;
+        private readonly IWebHostEnvironment _env;
 
-        public CompressController(IWebHostEnvironment env, PdfCompressor compressor)
+        public CompressController(PdfCompressor compressor, IWebHostEnvironment env)
         {
-            _env = env;
             _compressor = compressor;
+            _env = env;
         }
 
         [HttpPost("pdf-direct")]
-        public async Task<IActionResult> CompressDirect(IFormFile file, [FromForm] string quality = "/ebook")
+        public async Task<IActionResult> CompressDirect(IFormFile file, [FromForm] string quality)
         {
             if (file == null || file.Length == 0)
-                return BadRequest("No file uploaded");
+                return BadRequest("File not uploaded.");
 
-            var inputPath = Path.GetTempFileName();
-            var outputPath = Path.GetTempFileName();
+            var uploads = Path.Combine(_env.WebRootPath, "uploads");
+            var results = Path.Combine(_env.WebRootPath, "results");
+            Directory.CreateDirectory(uploads);
+            Directory.CreateDirectory(results);
 
-            using (var stream = new FileStream(inputPath, FileMode.Create))
+            var inputPath = Path.Combine(uploads, Guid.NewGuid() + Path.GetExtension(file.FileName));
+            var outputPath = Path.Combine(results, Path.GetFileNameWithoutExtension(inputPath) + "_compressed.pdf");
+
+            await using (var stream = new FileStream(inputPath, FileMode.Create))
+            {
                 await file.CopyToAsync(stream);
+            }
 
-            var success = await _compressor.CompressPdfAsync(inputPath, outputPath, quality);
+            var stopwatch = Stopwatch.StartNew();
+            bool success = await _compressor.CompressPdfAsync(inputPath, outputPath, quality);
+            stopwatch.Stop();
 
-            if (!success || !System.IO.File.Exists(outputPath))
-                return StatusCode(500, "Compression failed");
+            if (!success) return StatusCode(500, "Compression failed.");
 
-            var outputBytes = await System.IO.File.ReadAllBytesAsync(outputPath);
-            System.IO.File.Delete(inputPath);
-            System.IO.File.Delete(outputPath);
+            long originalSize = new FileInfo(inputPath).Length;
+            long compressedSize = new FileInfo(outputPath).Length;
 
-            return File(outputBytes, "application/pdf", $"{Path.GetFileNameWithoutExtension(file.FileName)}_compressed.pdf");
+            return Ok(new
+            {
+                originalSize = originalSize,
+                compressedSize = compressedSize,
+                ratio = (100 - ((compressedSize / (double)originalSize) * 100)).ToString("0.0"),
+                timeTaken = stopwatch.Elapsed.TotalSeconds.ToString("0.00"),
+                downloadUrl = $"/results/{Path.GetFileName(outputPath)}"
+            });
         }
     }
 }
