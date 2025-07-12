@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="UTF-8" />
+  <title>PDF Compressor</title>
+  <style>
+    body {
+      font-family: Tahoma, sans-serif;
+      background: #f4f4f4;
+      padding: 40px;
+      text-align: center;
+    }
+
+    h1 {
+      color: #333;
+    }
+
+    form {
+      background: #fff;
+      padding: 30px;
+      border-radius: 12px;
+      display: inline-block;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+
+    input[type="file"] {
+      padding: 10px;
+      margin-bottom: 20px;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+    }
+
+    button {
+      padding: 10px 20px;
+      background: #007bff;
+      color: #fff;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+      font-size: 16px;
+    }
+
+    button:disabled {
+      background: #999;
+      cursor: not-allowed;
+    }
+
+    #result {
+      margin-top: 30px;
+      background: #fff;
+      padding: 20px;
+      border-radius: 10px;
+      display: inline-block;
+      box-shadow: 0 0 5px rgba(0,0,0,0.1);
+      text-align: left;
+    }
+
+    .spinner {
+      margin-top: 20px;
+      border: 4px solid #f3f3f3;
+      border-top: 4px solid #007bff;
+      border-radius: 50%;
+      width: 40px;
+      height: 40px;
+      animation: spin 1s linear infinite;
+      display: inline-block;
+    }
+
+    @keyframes spin {
+      0% { transform: rotate(0deg); }
+      100% { transform: rotate(360deg); }
+    }
+
+    .loading-text {
+      margin-top: 10px;
+      color: #007bff;
+      font-weight: bold;
+    }
+
+    a {
+      color: #007bff;
+    }
+
+    #lang-switch {
+      position: absolute;
+      top: 15px;
+      left: 20px;
+      background: #eee;
+      padding: 5px 10px;
+      border-radius: 6px;
+      cursor: pointer;
+      font-size: 14px;
+    }
+  </style>
+</head>
+<body>
+
+  <div id="lang-switch">🇸🇦 العربية</div>
+
+  <h1 id="title">🗜️ PDF Compressor</h1>
+  <form id="uploadForm">
+    <input type="file" id="pdfFile" name="file" accept="application/pdf" required /><br />
+    <button type="submit" id="submitBtn">Compress Now</button>
+	<label for="quality" id="qualityLabel">اختر الجودة:</label><br>
+<select id="quality" name="quality" required>
+  <option value="/screen">📉 منخفضة (أقل حجم)</option>
+  <option value="/ebook" selected>📘 متوسطة (متوازنة)</option>
+  <option value="/printer">🖨️ عالية (أعلى جودة)</option>
+</select>
+  </form>
+
+  <div id="loading" style="display:none;">
+    <div class="spinner"></div>
+    <div class="loading-text" id="loadingText">Compressing...</div>
+  </div>
+
+  <div id="result"></div>
+
+  <script>
+    const form = document.getElementById("uploadForm");
+    const loading = document.getElementById("loading");
+    const resultDiv = document.getElementById("result");
+    const submitBtn = document.getElementById("submitBtn");
+    const title = document.getElementById("title");
+    const loadingText = document.getElementById("loadingText");
+    const langSwitch = document.getElementById("lang-switch");
+
+    let currentLang = navigator.language.startsWith('en') ? 'ar' : 'en';
+
+    const translations = {
+      ar: {
+        title: "🗜️ ضغط ملف PDF",
+        button: "ضغط الآن",
+        loading: "جارٍ ضغط الملف...",
+        success: "✅ تم الضغط بنجاح!",
+        link: "رابط التحميل:",
+        before: "الحجم قبل:",
+        after: "الحجم بعد:",
+        ratio: "نسبة الضغط:",
+        error: "❌ فشل الاتصال بالسيرفر.",
+        switch: "English 🇬🇧"
+      },
+      en: {
+        title: "🗜️ PDF Compressor",
+        button: "Compress Now",
+        loading: "Compressing...",
+        success: "✅ Compression successful!",
+        link: "Download link:",
+        before: "Original size:",
+        after: "Compressed size:",
+        ratio: "Compression ratio:",
+        error: "❌ Server error.",
+        switch: "🇸🇦 العربية"
+      }
+    };
+
+    function applyLanguage(lang) {
+      document.documentElement.lang = lang;
+      document.documentElement.dir = lang === 'ar' ? 'rtl' : 'ltr';
+      title.innerText = translations[lang].title;
+      submitBtn.innerText = translations[lang].button;
+      loadingText.innerText = translations[lang].loading;
+      langSwitch.innerText = translations[lang].switch;
+    }
+
+    langSwitch.addEventListener('click', () => {
+      currentLang = currentLang === 'ar' ? 'en' : 'ar';
+      applyLanguage(currentLang);
+    });
+
+    applyLanguage(currentLang);
+
+    form.addEventListener("submit", async (e) => {
+      e.preventDefault();
+      const fileInput = document.getElementById("pdfFile");
+      if (!fileInput.files.length) return;
+
+      resultDiv.innerHTML = "";
+      loading.style.display = "block";
+      submitBtn.disabled = true;
+
+      const formData = new FormData();
+      formData.append("file", fileInput.files[0]);
+
+      try {
+        const res = await fetch("/api/compress/pdf", {
+          method: "POST",
+          body: formData
+        });
+
+        const result = await res.json();
+        loading.style.display = "none";
+        submitBtn.disabled = false;
+
+        if (res.ok) {
+          resultDiv.innerHTML = `
+            <p>${translations[currentLang].success}</p>
+            <p><strong>${translations[currentLang].link}</strong> <a href="${result.fileUrl}" target="_blank">تحميل / Download</a></p>
+            <p><strong>${translations[currentLang].before}</strong> ${result.originalSizeKb.toFixed(1)} KB</p>
+            <p><strong>${translations[currentLang].after}</strong> ${result.compressedSizeKb.toFixed(1)} KB</p>
+            <p><strong>${translations[currentLang].ratio}</strong> ${result.compressionRatio}%</p>
+          `;
+        } else {
+          resultDiv.innerHTML = `<p style="color:red;">❌ ${result}</p>`;
+        }
+      } catch (err) {
+        loading.style.display = "none";
+        submitBtn.disabled = false;
+        resultDiv.innerHTML = `<p style="color:red;">${translations[currentLang].error}</p>`;
+      }
+    });
+  </script>
+</body>
+</html>
