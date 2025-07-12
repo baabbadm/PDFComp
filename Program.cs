@@ -36,6 +36,7 @@ app.UseRouting();
 app.MapControllers();
 
 // ✅ توجيه أي صفحة غير معرفة إلى auth.html (مثل تسجيل الدخول)
-app.MapFallbackToFile("auth.html");
+app.MapFallbackToFile("register.html");
+
 
 app.Run();
