@@ -1,59 +1,57 @@
-﻿using Microsoft.AspNetCore.Mvc;
 using FileCompressor.Services;
-using System.IO;
+using Microsoft.AspNetCore.Mvc;
+using System.Diagnostics;
 
 namespace FileCompressor.Controllers
 {
-    [Route("api/[controller]")]
+    [Route("api/compress")]
     [ApiController]
     public class CompressController : ControllerBase
     {
-        private readonly IWebHostEnvironment _env;
         private readonly PdfCompressor _compressor;
+        private readonly IWebHostEnvironment _env;
 
-        public CompressController(IWebHostEnvironment env, PdfCompressor compressor)
+        public CompressController(PdfCompressor compressor, IWebHostEnvironment env)
         {
-            _env = env;
             _compressor = compressor;
+            _env = env;
         }
 
-        [HttpPost("pdf")]
-        public async Task<IActionResult> CompressPdf(IFormFile file, [FromForm] string quality = "/ebook")
+        [HttpPost("pdf-direct")]
+        public async Task<IActionResult> CompressDirect(IFormFile file, [FromForm] string quality)
         {
             if (file == null || file.Length == 0)
-                return BadRequest("No file uploaded");
+                return BadRequest("File not uploaded.");
 
-            var uploadsDir = Path.Combine(_env.WebRootPath, "uploads");
-            var compressedDir = Path.Combine(_env.WebRootPath, "compressed");
+            var uploads = Path.Combine(_env.WebRootPath, "uploads");
+            var results = Path.Combine(_env.WebRootPath, "results");
+            Directory.CreateDirectory(uploads);
+            Directory.CreateDirectory(results);
 
-            Directory.CreateDirectory(uploadsDir);
-            Directory.CreateDirectory(compressedDir);
+            var inputPath = Path.Combine(uploads, Guid.NewGuid() + Path.GetExtension(file.FileName));
+            var outputPath = Path.Combine(results, Path.GetFileNameWithoutExtension(inputPath) + "_compressed.pdf");
 
-            var fileName = Path.GetFileNameWithoutExtension(file.FileName);
-            var ext = Path.GetExtension(file.FileName);
-            var inputPath = Path.Combine(uploadsDir, $"{fileName}{ext}");
-            var outputPath = Path.Combine(compressedDir, $"{fileName}_compressed{ext}");
-
-            using (var stream = new FileStream(inputPath, FileMode.Create))
+            await using (var stream = new FileStream(inputPath, FileMode.Create))
+            {
                 await file.CopyToAsync(stream);
+            }
 
-            var success = await _compressor.CompressPdfAsync(inputPath, outputPath, quality);
+            var stopwatch = Stopwatch.StartNew();
+            bool success = await _compressor.CompressPdfAsync(inputPath, outputPath, quality);
+            stopwatch.Stop();
 
-            if (!success)
-                return StatusCode(500, "Compression failed");
+            if (!success) return StatusCode(500, "Compression failed.");
 
             long originalSize = new FileInfo(inputPath).Length;
             long compressedSize = new FileInfo(outputPath).Length;
-            var compressionRatio = (1 - ((double)compressedSize / originalSize)) * 100;
-
-            var fileUrl = $"{Request.Scheme}://{Request.Host}/compressed/{Path.GetFileName(outputPath)}";
 
             return Ok(new
             {
-                fileUrl,
-                originalSizeKb = originalSize / 1024,
-                compressedSizeKb = compressedSize / 1024,
-                compressionRatio = Math.Round(compressionRatio, 2)
+                originalSize = originalSize,
+                compressedSize = compressedSize,
+                ratio = (100 - ((compressedSize / (double)originalSize) * 100)).ToString("0.0"),
+                timeTaken = stopwatch.Elapsed.TotalSeconds.ToString("0.00"),
+                downloadUrl = $"/results/{Path.GetFileName(outputPath)}"
             });
         }
     }

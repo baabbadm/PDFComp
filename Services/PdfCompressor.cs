@@ -1,20 +1,16 @@
-﻿using System.Diagnostics;
+using System.Diagnostics;
 
 namespace FileCompressor.Services
 {
     public class PdfCompressor
     {
-        private readonly string _gsExecutablePath;
-
-        public PdfCompressor(IWebHostEnvironment env)
-        {
-            _gsExecutablePath = Path.Combine(env.ContentRootPath, "gs", "bin", "gswin64c.exe");
-        }
+        private const string GhostscriptCommand = "gs"; // اسم الأمر في النظام
 
         public async Task<bool> CompressPdfAsync(string inputPath, string outputPath, string quality = "/ebook")
         {
-            if (!File.Exists(_gsExecutablePath))
-                throw new FileNotFoundException($"Ghostscript not found at {_gsExecutablePath}");
+            // تأكد أن Ghostscript موجود في النظام
+            if (string.IsNullOrWhiteSpace(GhostscriptCommand))
+                throw new FileNotFoundException("Ghostscript not found in system PATH.");
 
             var args = $"-sDEVICE=pdfwrite -dCompatibilityLevel=1.4 -dPDFSETTINGS={quality} -dNOPAUSE -dQUIET -dBATCH -sOutputFile=\"{outputPath}\" \"{inputPath}\"";
 
@@ -22,7 +18,7 @@ namespace FileCompressor.Services
             {
                 StartInfo = new ProcessStartInfo
                 {
-                    FileName = _gsExecutablePath,
+                    FileName = GhostscriptCommand,
                     Arguments = args,
                     RedirectStandardOutput = true,
                     RedirectStandardError = true,
@@ -32,7 +28,14 @@ namespace FileCompressor.Services
             };
 
             process.Start();
+
+            string stdOut = await process.StandardOutput.ReadToEndAsync();
+            string stdErr = await process.StandardError.ReadToEndAsync();
             await process.WaitForExitAsync();
+
+            // يمكنك تسجيل الإخراج إذا احتجت
+            Console.WriteLine(stdOut);
+            Console.Error.WriteLine(stdErr);
 
             return File.Exists(outputPath);
         }

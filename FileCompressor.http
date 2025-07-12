@@ -1,0 +1,6 @@
+@FileCompressor_HostAddress = http://localhost:5238
+
+GET {{FileCompressor_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

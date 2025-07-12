@@ -1,12 +1,21 @@
-﻿using FileCompressor.Services;
+using FileCompressor.Services;
+using FileCompressor.Data;
+using Microsoft.EntityFrameworkCore;
 
 var builder = WebApplication.CreateBuilder(args);
 
-// ✅ تسجيل الخدمات المطلوبة
-builder.Services.AddControllers(); // ← لدعم Controllers مثل CompressController
+// ✅ تحميل إعدادات الاتصال
+var connectionString = builder.Configuration.GetConnectionString("DefaultConnection");
+
+// ✅ تسجيل DbContext مع MySQL/MariaDB
+builder.Services.AddDbContext<AppDbContext>(options =>
+    options.UseMySql(connectionString, new MySqlServerVersion(new Version(10, 6))));
+
+// ✅ تسجيل الخدمات
+builder.Services.AddControllers(); 
 builder.Services.AddScoped<PdfCompressor>();
 
-// ✅ تفعيل Swagger (اختياري للتوثيق)
+// ✅ تفعيل Swagger
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
@@ -19,15 +28,15 @@ if (app.Environment.IsDevelopment())
     app.UseSwaggerUI();
 }
 
-// ✅ دعم HTTPS وملفات wwwroot
-//app.UseHttpsRedirection();
+// ✅ دعم الملفات الثابتة (wwwroot)
 app.UseStaticFiles();
 
-// ✅ تفعيل الـ Routing وتسجيل الـ Controllers
+// ✅ توجيه الطلبات
 app.UseRouting();
 app.MapControllers();
 
-// ✅ تشغيل التطبيق
-app.MapFallbackToFile("index.html");
+// ✅ توجيه أي صفحة غير معرفة إلى auth.html (مثل تسجيل الدخول)
+app.MapFallbackToFile("register.html");
+
 
 app.Run();
