@@ -51,17 +51,6 @@
       font-size: 14px;
     }
 
-    #logout {
-      position: absolute;
-      top: 15px;
-      right: 20px;
-      background: #f8d7da;
-      padding: 5px 10px;
-      border-radius: 6px;
-      cursor: pointer;
-      font-size: 14px;
-    }
-
     .spinner {
       margin: 20px auto 10px;
       border: 4px solid #f3f3f3;
@@ -83,22 +72,19 @@
       color: #007bff;
       font-weight: bold;
     }
-  </style>
 
-  <script>
-    // ✅ تحقق من وجود الجلسة
-    if (sessionStorage.getItem("loggedIn") !== "true") {
-      window.location.href = "auth.html";
+    .result {
+      margin-top: 20px;
+      font-weight: bold;
     }
-  </script>
+  </style>
 </head>
 <body>
 
   <div id="lang-switch">🇸🇦 العربية</div>
-  <div id="logout">🚪 Logout</div>
 
   <h1 id="title">🗜️ PDF Compressor</h1>
-  <form id="uploadForm" method="post" enctype="multipart/form-data" action="/api/compress/pdf-direct">
+  <form id="uploadForm">
     <input type="file" id="pdfFile" name="file" accept="application/pdf" required /><br>
 
     <label for="quality" id="qualityLabel">Select Quality:</label><br>
@@ -115,6 +101,8 @@
     </div>
   </form>
 
+  <div class="result" id="resultText"></div>
+
   <script>
     const langSwitch = document.getElementById("lang-switch");
     const title = document.getElementById("title");
@@ -122,6 +110,7 @@
     const submitBtn = document.getElementById("submitBtn");
     const loading = document.getElementById("loading");
     const loadingText = document.getElementById("loadingText");
+    const resultText = document.getElementById("resultText");
 
     let currentLang = navigator.language.startsWith('ar') ? 'ar' : 'en';
 
@@ -131,14 +120,26 @@
         qualityLabel: "اختر الجودة:",
         button: "ضغط الآن",
         loading: "جارٍ الضغط...",
-        switch: "English 🇬🇧"
+        switch: "English 🇬🇧",
+        result: (orig, comp, ratio, time, url) =>
+          `✅ الحجم الأصلي: ${(orig/1024/1024).toFixed(2)} MB<br>
+           ✅ بعد الضغط: ${(comp/1024/1024).toFixed(2)} MB<br>
+           ✅ نسبة الضغط: ${ratio}%<br>
+           🕒 الوقت المستغرق: ${time} ثانية<br>
+           📥 <a href="${url}" target="_blank">تحميل الملف المضغوط</a>`
       },
       en: {
         title: "🗜️ PDF Compressor",
         qualityLabel: "Select Quality:",
         button: "Compress Now",
         loading: "Compressing...",
-        switch: "🇸🇦 العربية"
+        switch: "🇸🇦 العربية",
+        result: (orig, comp, ratio, time, url) =>
+          `✅ Original size: ${(orig/1024/1024).toFixed(2)} MB<br>
+           ✅ Compressed size: ${(comp/1024/1024).toFixed(2)} MB<br>
+           ✅ Compression Ratio: ${ratio}%<br>
+           🕒 Time Taken: ${time} sec<br>
+           📥 <a href="${url}" target="_blank">Download Compressed File</a>`
       }
     };
 
@@ -159,15 +160,37 @@
 
     applyLanguage(currentLang);
 
-    // ✅ إظهار سبينر عند الضغط
-    document.getElementById("uploadForm").addEventListener("submit", function () {
+    document.getElementById("uploadForm").addEventListener("submit", async (e) => {
+      e.preventDefault();
       loading.style.display = "block";
-    });
+      resultText.innerHTML = "";
 
-    // ✅ زر تسجيل الخروج
-    document.getElementById("logout").addEventListener("click", () => {
-      sessionStorage.removeItem("loggedIn");
-      window.location.href = "auth.html";
+      const formData = new FormData();
+      const file = document.getElementById("pdfFile").files[0];
+      const quality = document.getElementById("quality").value;
+      formData.append("file", file);
+      formData.append("quality", quality);
+
+      try {
+        const res = await fetch("/api/compress/pdf-direct", {
+          method: "POST",
+          body: formData
+        });
+
+        const result = await res.json();
+        loading.style.display = "none";
+
+        resultText.innerHTML = translations[currentLang].result(
+          result.originalSize,
+          result.compressedSize,
+          result.ratio,
+          result.timeTaken,
+          result.downloadUrl
+        );
+      } catch (err) {
+        loading.style.display = "none";
+        resultText.innerHTML = "❌ Compression failed.";
+      }
     });
   </script>
 </body>
