@@ -1,14 +1,11 @@
 using FileCompressor.Services;
-using Microsoft.AspNetCore.Session;
-using Microsoft.EntityFrameworkCore;
+using Microsoft.AspNetCore.Builder;
+using Microsoft.Extensions.DependencyInjection;
+using Microsoft.Extensions.Hosting;
 
 var builder = WebApplication.CreateBuilder(args);
 
-// ✅ Add services
-builder.Services.AddControllers();
-builder.Services.AddScoped<PdfCompressor>();
-
-// ✅ Add Session support
+// ✅ إعداد الجلسات
 builder.Services.AddDistributedMemoryCache();
 builder.Services.AddSession(options =>
 {
@@ -17,37 +14,34 @@ builder.Services.AddSession(options =>
     options.Cookie.IsEssential = true;
 });
 
-// ✅ Add database context (لو تستخدم EF Core)
-builder.Services.AddDbContext<Data.AppDbContext>(options =>
-    options.UseMySql(
-        builder.Configuration.GetConnectionString("DefaultConnection"),
-        ServerVersion.AutoDetect(builder.Configuration.GetConnectionString("DefaultConnection"))
-    )
-);
+// ✅ إضافة الخدمات المطلوبة
+builder.Services.AddControllers();
+builder.Services.AddScoped<PdfCompressor>();
 
-// ✅ Swagger (اختياري)
+// ✅ إعداد Swagger (اختياري)
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
 var app = builder.Build();
 
-// ✅ Middleware pipeline
+// ✅ تفعيل Swagger في بيئة التطوير
 if (app.Environment.IsDevelopment())
 {
     app.UseSwagger();
     app.UseSwaggerUI();
 }
 
-// app.UseHttpsRedirection(); // أزلها إذا تستخدم HTTP
-
+// ✅ ملفات ثابتة + الجلسة
 app.UseStaticFiles();
 app.UseRouting();
+app.UseSession();
+app.UseAuthorization();
 
-app.UseSession(); // ✅ مهم قبل UseAuthorization
-
+// ✅ مسارات الـ Controllers
 app.MapControllers();
 
-// ✅ لو الصفحة ما انوجدت، يرجع auth.html
+// ✅ صفحة auth.html للمستخدمين غير المسجلين
 app.MapFallbackToFile("auth.html");
 
+// ✅ شغّل التطبيق
 app.Run();
