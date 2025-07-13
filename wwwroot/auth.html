@@ -118,9 +118,9 @@
 
       const text = await res.text();
       if (res.ok) {
-        message.classList.remove("error");
-        message.textContent = text;
-        form.reset();
+   
+  window.location.href = "dashboard.html";
+
       } else {
         message.classList.add("error");
         message.textContent = text;
