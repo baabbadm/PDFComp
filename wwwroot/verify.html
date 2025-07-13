@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="UTF-8" />
+  <title>Email Verification</title>
+  <style>
+    body {
+      font-family: Tahoma, sans-serif;
+      background: #f0f2f5;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+    form {
+      background: #fff;
+      padding: 30px;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+      width: 300px;
+    }
+    h2 {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+    input[type="email"],
+    input[type="text"] {
+      width: 100%;
+      padding: 10px;
+      margin: 10px 0;
+      border-radius: 6px;
+      border: 1px solid #ccc;
+    }
+    button {
+      width: 100%;
+      padding: 10px;
+      background-color: #28a745;
+      color: #fff;
+      border: none;
+      border-radius: 6px;
+      font-size: 16px;
+      cursor: pointer;
+    }
+    .msg {
+      text-align: center;
+      margin-top: 10px;
+      font-size: 14px;
+    }
+    .error {
+      color: red;
+    }
+    .success {
+      color: green;
+    }
+  </style>
+</head>
+<body>
+  <form id="verifyForm">
+    <h2>Verify Email</h2>
+    <input type="email" name="email" placeholder="Your Email" required />
+    <input type="text" name="code" placeholder="Verification Code" required />
+    <button type="submit">Verify</button>
+    <div id="verifyMessage" class="msg"></div>
+  </form>
+
+  <script>
+    const verifyForm = document.getElementById("verifyForm");
+    const verifyMessage = document.getElementById("verifyMessage");
+
+    verifyForm.addEventListener("submit", async function (e) {
+      e.preventDefault();
+
+      const formData = new FormData(verifyForm);
+
+      const res = await fetch("/api/verify", {
+        method: "POST",
+        body: formData
+      });
+
+      const text = await res.text();
+      if (res.ok) {
+        verifyMessage.className = "msg success";
+        verifyMessage.textContent = text;
+        verifyForm.reset();
+      } else {
+        verifyMessage.className = "msg error";
+        verifyMessage.textContent = text;
+      }
+    });
+  </script>
+</body>
+</html>
