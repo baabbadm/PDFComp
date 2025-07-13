@@ -2,82 +2,128 @@
 <html lang="en" dir="ltr">
 <head>
   <meta charset="UTF-8" />
-  <title>Login | PDF Compressor</title>
+  <title>Login</title>
   <style>
     body {
       font-family: Tahoma, sans-serif;
-      background: #f4f4f4;
-      padding: 60px;
-      text-align: center;
+      background: #f0f2f5;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
     }
-
     form {
       background: #fff;
       padding: 30px;
-      border-radius: 12px;
-      display: inline-block;
+      border-radius: 10px;
       box-shadow: 0 0 10px rgba(0,0,0,0.1);
+      width: 300px;
     }
-
+    h2 {
+      text-align: center;
+      margin-bottom: 20px;
+    }
     input[type="email"],
     input[type="password"] {
-      display: block;
-      margin: 10px auto;
-      padding: 12px;
-      width: 250px;
-      border: 1px solid #ccc;
+      width: 100%;
+      padding: 10px;
+      margin: 10px 0;
       border-radius: 6px;
+      border: 1px solid #ccc;
     }
-
+    .checkbox {
+      display: flex;
+      align-items: center;
+      margin: 10px 0;
+    }
+    .checkbox input {
+      margin-right: 8px;
+    }
     button {
-      padding: 10px 20px;
-      background: #28a745;
+      width: 100%;
+      padding: 10px;
+      background-color: #007bff;
       color: #fff;
       border: none;
       border-radius: 6px;
-      cursor: pointer;
       font-size: 16px;
+      cursor: pointer;
+    }
+    .msg {
+      text-align: center;
       margin-top: 10px;
+      font-size: 14px;
+      color: green;
     }
-
-    h2 {
-      color: #333;
-    }
-
     .error {
       color: red;
-      margin-top: 10px;
-      display: none;
+    }
+    .register-link {
+      display: block;
+      text-align: center;
+      margin-top: 15px;
+      font-size: 14px;
+    }
+    .register-link a {
+      color: #007bff;
+      text-decoration: none;
     }
   </style>
 </head>
 <body>
-
-  <h2>🔐 Login to continue</h2>
-
-  <form id="loginForm">
-    <input type="email" id="email" placeholder="Email" required />
-    <input type="password" id="password" placeholder="Password" required />
+  <form id="loginForm" method="POST" action="/api/login" enctype="multipart/form-data">
+    <h2>Login</h2>
+    <input type="email" name="email" id="emailInput" placeholder="Email" required />
+    <input type="password" name="password" placeholder="Password" required />
+    <div class="checkbox">
+      <input type="checkbox" id="rememberMe" />
+      <label for="rememberMe">تذكرني</label>
+    </div>
     <button type="submit">Login</button>
-    <div class="error" id="errorMessage">Invalid credentials. Try again.</div>
+    <div id="responseMessage" class="msg"></div>
+    <div class="register-link">
+      لا تملك حساب؟ <a href="register.html">الرجاء التسجيل</a>
+    </div>
   </form>
 
   <script>
-    const loginForm = document.getElementById("loginForm");
-    const errorMessage = document.getElementById("errorMessage");
+    const form = document.getElementById("loginForm");
+    const message = document.getElementById("responseMessage");
+    const emailInput = document.getElementById("emailInput");
+    const rememberMe = document.getElementById("rememberMe");
 
-    loginForm.addEventListener("submit", function (e) {
+    // إذا كان محفوظ في localStorage
+    window.addEventListener("load", () => {
+      const savedEmail = localStorage.getItem("rememberedEmail");
+      if (savedEmail) {
+        emailInput.value = savedEmail;
+        rememberMe.checked = true;
+      }
+    });
+
+    form.addEventListener("submit", async function (e) {
       e.preventDefault();
+      const formData = new FormData(form);
 
-      const email = document.getElementById("email").value.trim();
-      const password = document.getElementById("password").value.trim();
-
-      // يمكن استبداله لاحقًا بالتوثيق الفعلي
-      if (email && password) {
-        sessionStorage.setItem("loggedIn", "true");
-        window.location.href = "index.html";
+      if (rememberMe.checked) {
+        localStorage.setItem("rememberedEmail", emailInput.value);
       } else {
-        errorMessage.style.display = "block";
+        localStorage.removeItem("rememberedEmail");
+      }
+
+      const res = await fetch("/api/login", {
+        method: "POST",
+        body: formData
+      });
+
+      const text = await res.text();
+      if (res.ok) {
+        message.classList.remove("error");
+        message.textContent = text;
+        form.reset();
+      } else {
+        message.classList.add("error");
+        message.textContent = text;
       }
     });
   </script>
