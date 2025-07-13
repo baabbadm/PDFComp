@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <title>لوحة التحكم</title>
+  <style>
+    body {
+      font-family: Tahoma, sans-serif;
+      background: #f9f9f9;
+      margin: 0;
+      padding: 0;
+    }
+    header {
+      background-color: #007bff;
+      color: white;
+      padding: 15px 20px;
+      text-align: center;
+    }
+    main {
+      padding: 20px;
+      text-align: center;
+    }
+    .logout-btn {
+      background: #dc3545;
+      color: white;
+      border: none;
+      padding: 10px 20px;
+      margin-top: 20px;
+      border-radius: 6px;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    مرحبًا بك في لوحة التحكم
+  </header>
+  <main>
+    <p>تم تسجيل الدخول بنجاح 🎉</p>
+    <button class="logout-btn" onclick="logout()">تسجيل الخروج</button>
+  </main>
+
+  <script>
+    function logout() {
+      localStorage.removeItem("rememberedEmail");
+      window.location.href = "login.html";
+    }
+  </script>
+</body>
+</html>
