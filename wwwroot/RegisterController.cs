@@ -2,7 +2,8 @@ using Microsoft.AspNetCore.Mvc;
 using MySql.Data.MySqlClient;
 using System.Security.Cryptography;
 using System.Text;
-
+using MailKit.Net.Smtp; 
+using MimeKit;
 namespace FileCompressor.Controllers
 {
     [Route("api/[controller]")]
@@ -47,7 +48,20 @@ namespace FileCompressor.Controllers
                 return StatusCode(500, "Registration failed.");
             }
         }
+private void SendVerificationEmail(string toEmail, string code)
+{
+    var message = new MimeMessage();
+    message.From.Add(MailboxAddress.Parse("rpahelpus@gmail.com"));
+    message.To.Add(MailboxAddress.Parse(toEmail));
+    message.Subject = "Verification Code";
+    message.Body = new TextPart("plain") { Text = $"Your verification code is: {code}" };
 
+    using var smtp = new SmtpClient();
+    smtp.Connect("smtp.gmail.com", 587, MailKit.Security.SecureSocketOptions.StartTls);
+    smtp.Authenticate("rpahelpus@gmail.com", "كلمة_مرور_التطبيق"); // تحتاج توليد App Password
+    smtp.Send(message);
+    smtp.Disconnect(true);
+}
         private static string ComputeSha256Hash(string rawData)
         {
             using var sha256 = SHA256.Create();
