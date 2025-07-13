@@ -1,4 +1,5 @@
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Http;
 using MySql.Data.MySqlClient;
 using System.Security.Cryptography;
 using System.Text;
@@ -32,18 +33,15 @@ namespace FileCompressor.Controllers
             cmd.Parameters.AddWithValue("@e", email);
             cmd.Parameters.AddWithValue("@p", passwordHash);
 
-            var result = Convert.ToInt32(cmd.ExecuteScalar());
+            var count = Convert.ToInt32(cmd.ExecuteScalar());
 
-            if (result > 0)
+            if (count > 0)
             {
-                // ✅ تسجيل الدخول ناجح — نرسل Session ID أو Cookie أو Token حسب الحاجة
                 HttpContext.Session.SetString("user", email);
-                return Ok("Login successful");
+                return Ok("Login successful.");
             }
-            else
-            {
-                return Unauthorized("Invalid email or password");
-            }
+
+            return Unauthorized("Invalid credentials.");
         }
 
         private static string ComputeSha256Hash(string rawData)
