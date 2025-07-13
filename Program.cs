@@ -1,42 +1,53 @@
 using FileCompressor.Services;
-using FileCompressor.Data;
+using Microsoft.AspNetCore.Session;
 using Microsoft.EntityFrameworkCore;
 
 var builder = WebApplication.CreateBuilder(args);
 
-// ✅ تحميل إعدادات الاتصال
-var connectionString = builder.Configuration.GetConnectionString("DefaultConnection");
-
-// ✅ تسجيل DbContext مع MySQL/MariaDB
-builder.Services.AddDbContext<AppDbContext>(options =>
-    options.UseMySql(connectionString, new MySqlServerVersion(new Version(10, 6))));
-
-// ✅ تسجيل الخدمات
-builder.Services.AddControllers(); 
+// ✅ Add services
+builder.Services.AddControllers();
 builder.Services.AddScoped<PdfCompressor>();
 
-// ✅ تفعيل Swagger
+// ✅ Add Session support
+builder.Services.AddDistributedMemoryCache();
+builder.Services.AddSession(options =>
+{
+    options.IdleTimeout = TimeSpan.FromHours(1);
+    options.Cookie.HttpOnly = true;
+    options.Cookie.IsEssential = true;
+});
+
+// ✅ Add database context (لو تستخدم EF Core)
+builder.Services.AddDbContext<Data.AppDbContext>(options =>
+    options.UseMySql(
+        builder.Configuration.GetConnectionString("DefaultConnection"),
+        ServerVersion.AutoDetect(builder.Configuration.GetConnectionString("DefaultConnection"))
+    )
+);
+
+// ✅ Swagger (اختياري)
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
 var app = builder.Build();
 
-// ✅ في بيئة التطوير، فعّل Swagger
+// ✅ Middleware pipeline
 if (app.Environment.IsDevelopment())
 {
     app.UseSwagger();
     app.UseSwaggerUI();
 }
 
-// ✅ دعم الملفات الثابتة (wwwroot)
-app.UseStaticFiles();
+// app.UseHttpsRedirection(); // أزلها إذا تستخدم HTTP
 
-// ✅ توجيه الطلبات
+app.UseStaticFiles();
 app.UseRouting();
+
+app.UseSession(); // ✅ مهم قبل UseAuthorization
+
 app.MapControllers();
 
-// ✅ توجيه أي صفحة غير معرفة إلى auth.html (مثل تسجيل الدخول)
-app.MapFallbackToFile("register.html");
-
+// ✅ لو الصفحة ما انوجدت، يرجع auth.html
+app.MapFallbackToFile("auth.html");
 
 app.Run();
